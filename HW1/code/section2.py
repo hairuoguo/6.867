@@ -31,14 +31,14 @@ def ml_sse(x_data, y_data, M, func_constr):
 
 def make_sse(x_data, y_data, basis_functions):
     features = np.array([[function(x) for function in basis_functions] for x in x_data])
-    return lambda w: np.sum((y_data - w.dot(features.T))**2) 
+    return lambda w: 0.5*np.sum((y_data - w.dot(features.T))**2) 
 
 def make_sse_d(x_data, y_data, basis_functions):
     if np.isscalar(x_data):
         features = np.array([basis_function(x_data) for basis_function in basis_functions] )
     else:
         features = np.array([[basis_function(x) for basis_function in basis_functions] for x in x_data])
-    return lambda w: -1*2*np.sum(features*(y_data - w.dot(features.T)).reshape((-1, 1)), axis=0)
+    return lambda w: -1*np.sum(features*(y_data - w.dot(features.T)).reshape((-1, 1)), axis=0)
     
  
 
