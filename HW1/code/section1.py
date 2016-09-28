@@ -19,17 +19,19 @@ def main():
     batch_threshold = 10**-3
     batch_step_size = 10**-4
     theta = np.random.normal(0, 0.1, gd_x.shape[1])
+    tau = 10**10
+    kappa = 0.5 
     
     print(basic_gd(gauss_initial_guess, gauss_step_size, gauss_threshold, neg_gauss, neg_gauss_d))
     print(basic_gd(quadbowl_initial_guess, quadbowl_step_size, quadbowl_threshold, quadbowl, quadbowl_d))
     print(finite_diff(gauss_initial_guess, 10**-5, neg_gauss)) 
     print(finite_diff(quadbowl_initial_guess, 10**-1, quadbowl))
-    avg_least_sq = make_avg_least_sq(gd_x, gd_y)
-    avg_least_sq_d = make_avg_least_sq_d(gd_x, gd_y) 
+    avg_least_sq = make_least_sq(gd_x, gd_y)
+    avg_least_sq_d = make_least_sq_d(gd_x, gd_y) 
     print(batch_gd(gd_x, gd_y, batch_step_size, batch_threshold,  avg_least_sq, avg_least_sq_d, theta))
     ideal_theta = np.linalg.inv(gd_x.T.dot(gd_x)).dot(gd_x.T).dot(gd_y)
     print(avg_least_sq(ideal_theta))
-    print(stochastic_gd(gd_x, gd_y, batch_step_size, batch_threshold,  avg_least_sq, make_avg_least_sq_d, theta))
+    print(stochastic_gd(gd_x, gd_y, tau, kappa, batch_threshold,  avg_least_sq, make_least_sq_d, theta))
     
 
 def make_quadbowl(quadBowlA, quadBowlb):
@@ -58,11 +60,11 @@ def finite_diff(x, delta, function):
         all_deltas.append(function(temp_x) - function(x))
     return np.array(all_deltas)/delta
 
-def make_avg_least_sq(batch_x, batch_y):
-    return lambda theta: np.sum((batch_x.dot(theta) - batch_y)**2)/batch_x.shape[0]    
+def make_least_sq(batch_x, batch_y):
+    return lambda theta: np.sum((batch_x.dot(theta) - batch_y)**2)    
 
-def make_avg_least_sq_d(batch_x, batch_y):
-    return lambda theta: 2*batch_x.T.dot(batch_x.dot(theta) - batch_y)/batch_x.shape[0]
+def make_least_sq_d(batch_x, batch_y):
+    return lambda theta: 2*batch_x.T.dot(batch_x.dot(theta) - batch_y)
      
 
 def basic_gd(initial_guess, step_size, threshold, obj_func, d_func):
@@ -93,13 +95,15 @@ def batch_gd(data_x, data_y, step_size, threshold, obj_func, d_func, init_theta)
     print("Final avg error: " + str(error))
     return theta  
 
-def stochastic_gd(data_x, data_y, step_size, threshold, obj_func, make_d_func, init_theta):
+def stochastic_gd(data_x, data_y, tau, kappa, threshold, obj_func, make_d_func, init_theta):
+    step = 0
     theta = init_theta
     prev_error = obj_func(theta)
     convergence = False
     datum_count = 0
     shuffled_deck = range(len(data_x))
     while not convergence:
+        step_size = (tau + step)**(-1*kappa)
         index = shuffled_deck[datum_count]
         x = data_x[index]
         y = data_y[index]
@@ -115,6 +119,7 @@ def stochastic_gd(data_x, data_y, step_size, threshold, obj_func, make_d_func, i
             np.random.shuffle(shuffled_deck)
             datum_count = 0 
         print(error)
+        step += 1
     print("Final avg error: " + str(error))
     return theta  
 if __name__ == "__main__":

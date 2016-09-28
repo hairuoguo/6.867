@@ -15,9 +15,11 @@ def main():
     batch_threshold = 10**-2
     batch_obj = make_sse(x_data, y_data, poly_funcs)
     batch_d = make_sse_d(x_data, y_data, poly_funcs)
+    tau = 1
+    kappa = 0.75
     def sg_make_sse_d(x_data, y_data): return make_sse_d(x_data, y_data, poly_funcs)
     print(s1.batch_gd(x_data, y_data, batch_step_size, batch_threshold, batch_obj, batch_d, init_w)) 
-    print(s1.stochastic_gd(x_data, y_data, batch_step_size, batch_threshold, batch_obj, sg_make_sse_d, init_w)) 
+    print(s1.stochastic_gd(x_data, y_data, tau, kappa, batch_threshold, batch_obj, sg_make_sse_d, init_w)) 
     print(ml_sse(x_data, y_data, 8, cosine_funcs_constr))
 
 def make_funcs_init_weights(M, func_constr):
