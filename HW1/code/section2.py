@@ -7,12 +7,13 @@ def main():
     x_data, y_data = ld.getData()
     poly_funcs_constr = lambda n: lambda x:x**n
     cosine_funcs_constr = lambda n: lambda x: math.cos(n*math.pi*x)
-    print(ml_sse(x_data, y_data, 5, poly_funcs_constr))
-    poly_funcs, init_w = make_funcs_init_weights(5, poly_funcs_constr)
-    print(make_sse_d(x_data, y_data, poly_funcs)(init_w))
-    print(s1.finite_diff(init_w, 0.01, make_sse(x_data, y_data, poly_funcs)))
-    batch_step_size = 10**-2
-    batch_threshold = 10**-2
+    #print(ml_sse(x_data, y_data, 5, poly_funcs_constr))
+    M = 3 
+    poly_funcs, init_w = make_funcs_init_weights(M, poly_funcs_constr)
+    #print(make_sse_d(x_data, y_data, poly_funcs)(init_w))
+    #print(s1.finite_diff(init_w, 0.01, make_sse(x_data, y_data, poly_funcs)))
+    batch_step_size = 10**-3
+    batch_threshold = 10**-4
     batch_obj = make_sse(x_data, y_data, poly_funcs)
     batch_d = make_sse_d(x_data, y_data, poly_funcs)
     tau = 1
@@ -20,11 +21,17 @@ def main():
     def sg_make_sse_d(x_data, y_data): return make_sse_d(x_data, y_data, poly_funcs)
     print(s1.batch_gd(x_data, y_data, batch_step_size, batch_threshold, batch_obj, batch_d, init_w)) 
     print(s1.stochastic_gd(x_data, y_data, tau, kappa, batch_threshold, batch_obj, sg_make_sse_d, init_w)) 
-    print(ml_sse(x_data, y_data, 8, cosine_funcs_constr))
-
+    #print(ml_sse(x_data, y_data, 8, cosine_funcs_constr))
+'''
+    for point in xrange(3):
+        point = np.random.normal(0, 0.1, 3)
+        print(point)
+        print(batch_d(point))
+        print(s1.finite_diff(point, 10**-5, batch_obj))
+'''
 def make_funcs_init_weights(M, func_constr):
     funcs = [func_constr(n) for n in range(M)]
-    init_w = np.random.normal(0, 0.1, M)
+    init_w = np.random.normal(3, 5, M)
     return funcs, init_w
     
 def ml_sse(x_data, y_data, M, func_constr):
