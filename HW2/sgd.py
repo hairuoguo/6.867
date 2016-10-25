@@ -1,11 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import math
-import P1.loadFittingDataP1 as ld
-import P1.loadParametersP1 as lp
 
 def main():
-    gaussMean, gaussCov, quadBowlA, quadBowlb = lp.getData()
+    #gaussMean, gaussCov, quadBowlA, quadBowlb = lp.getData()
     gauss_initial_guess = np.array([15., 15.])
     gauss_step_size = 10**6
     gauss_threshold = 10**-12
@@ -16,7 +14,7 @@ def main():
     quadbowl = make_quadbowl(quadBowlA, quadBowlb)
     neg_gauss_d = make_neg_gauss_d(gaussMean, gaussCov) 
     quadbowl_d = make_quadbowl_d(quadBowlA, quadBowlb)
-    gd_x, gd_y = ld.getData()
+    #gd_x, gd_y = ld.getData()
     batch_threshold = 10**-3
     batch_step_size = 10**-5
     theta = np.random.normal(0, 0.1, gd_x.shape[1])
@@ -135,6 +133,7 @@ def basic_gd(initial_guess, step_size, threshold, obj_func, d_func):
         x = -1*gradient*step_size + x
         y = obj_func(x)
         convergence = abs(y - prev_y) < threshold
+        print(abs(y - prev_y))
         prev_y = y
     #print(g_norms)
     #plt.plot(g_norms)

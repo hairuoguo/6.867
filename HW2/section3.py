@@ -5,7 +5,12 @@ import math
 from cvxopt import matrix, solvers
 
 def main():
-    rbf_func = RBFSampler(gamma=1, random_state=1).fit_transform 
+    rbf_func = RBFSampler(gamma=1, random_state=1).fit_transform
+    train = np.loadtxt('data/data1_train.csv')
+    x_train = train[:, 0:2].copy()
+    y_train = train[:, 2:3].copy()
+    print(pegasos(x_train, y_train, 1, 1000))
+    print(pegasos_kernel(x_train, y_train, 1, 1000, rbf_func))
 
 def pegasos(x_data, y_data, l, max_epochs):
     t = 0
@@ -13,7 +18,7 @@ def pegasos(x_data, y_data, l, max_epochs):
     w_0 = 0.
     num_epochs = 0
     while num_epochs < max_epochs:
-        for n in y_data.size:
+        for n in xrange(y_data.size):
             t += 1
             step_size = 1./(t*l)
             if y_data[n]*(w.dot(x_data[n]) + w_0) < 1.:
@@ -29,16 +34,16 @@ def pegasos_kernel(x_data, y_data, l, max_epochs, map_func=lambda x:x):
     t = 0
     x_data = map_func(x_data)
     K = x_data.dot(x_data.T)
-    alpha = np.zeros(x_data.shape[1])
+    alpha = np.zeros(x_data.shape[0])
     num_epochs = 0
     while num_epochs < max_epochs:
-        for n in y_data.size:
+        for n in xrange(y_data.size):
             t += 1
             step_size = 1./(t*l)
-            if y_data[n]*(alpha.reshape((-1, 1))*K) < 1.:
-                alpha = (1 - step_size*l)*alpha + step_size*y_data[n]
+            if y_data[n]*np.sum(alpha*K[:, n]) < 1.:
+                alpha[n] = (1 - step_size*l)*alpha[n] + step_size*y_data[n]
             else:
-                alpha = (1 - step_size*l)*alpha
+                alpha[n] = (1 - step_size*l)*alpha[n]
         num_epochs += 1
     return alpha
 
