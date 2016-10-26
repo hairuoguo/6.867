@@ -5,12 +5,20 @@ import math
 from cvxopt import matrix, solvers
 
 def main():
-    rbf_func = RBFSampler(gamma=1, random_state=1).fit_transform
-    train = np.loadtxt('data/data1_train.csv')
+    train = np.loadtxt('data/data3_train.csv')
     x_train = train[:, 0:2].copy()
-    y_train = train[:, 2:3].copy()
-    print(pegasos(x_train, y_train, 1, 1000))
-    print(pegasos_kernel(x_train, y_train, 1, 1000, rbf_func))
+    y_train = train[:, 2:3].copy().flatten()
+    #print(pegasos(x_train, y_train, 1, 1000))
+    #pegasos_kernel(x_train, y_train, 1, 1000, rbf_func)
+    margins = []
+    #print(x_train.shape)
+    for n in xrange(-2, 3):
+        rbf_func = RBFSampler(gamma=2**(n), random_state=1).fit_transform
+        alpha = pegasos_kernel(x_train, y_train, 0.02, 1000, rbf_func)
+        print(n)
+        print(1/np.linalg.norm(alpha))
+        print(np.count_nonzero(alpha))
+    
 
 def pegasos(x_data, y_data, l, max_epochs):
     t = 0
@@ -34,7 +42,7 @@ def pegasos_kernel(x_data, y_data, l, max_epochs, map_func=lambda x:x):
     t = 0
     x_data = map_func(x_data)
     K = x_data.dot(x_data.T)
-    alpha = np.zeros(x_data.shape[0])
+    alpha = np.zeros(y_data.size)
     num_epochs = 0
     while num_epochs < max_epochs:
         for n in xrange(y_data.size):

@@ -133,7 +133,7 @@ def basic_gd(initial_guess, step_size, threshold, obj_func, d_func):
         x = -1*gradient*step_size + x
         y = obj_func(x)
         convergence = abs(y - prev_y) < threshold
-        print(abs(y - prev_y))
+        #print(abs(y - prev_y))
         prev_y = y
     #print(g_norms)
     #plt.plot(g_norms)

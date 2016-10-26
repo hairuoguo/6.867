@@ -17,7 +17,7 @@ def main():
     rbf_func = RBFSampler(gamma=1, random_state=1).fit_transform
     q, p, A, b, I, G, h = create_variables(x_data, y_data, 1.0, rbf_func)
     x = solvers.qp(p, q, G, h, A, b)['x']
-    print(x)
+    #print(x)
     
     
     
