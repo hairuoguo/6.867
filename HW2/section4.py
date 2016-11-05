@@ -26,7 +26,7 @@ def main():
         '''
         w, w_0 = s3.pegasos(x_data, y_data, 0.001, 1000)
         '''
-        q, p, A, b, I, G, h = s2.create_variables(x_data, y_data, 1.0)
+        q, p, A, b, I, G, h = s2.create_variables(x_data, y_data, 10)
         w = np.array(solvers.qp(p, q, G, h, A, b)['x'])
         results = (y_test*np.sign(w.dot(x_test.T)))
         print((results[results<0]).size)
