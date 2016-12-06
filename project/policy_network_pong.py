@@ -79,17 +79,13 @@ def train(sess, env, iters, batch_size, df=0.01):
                         prev_test_obs = np.zeros(obs.shape)
                         test_reward = 0.
                         test_steps = 0
-                        test_states = []
-                        test_actions = []
                         while test_done == False:
                             test_steps += 1
                             test_frame = preprocess_frame(prev_test_obs, test_obs)
                             test_readout = sess.run(network, feed_dict={network_input: test_frame})
-                            test_action = np.argmax(test_readout.flatten())
-                            test_actions.append(test_action)
+                            test_action = 2 if np.random.uniform() < test_readout.flatten()[0] else 3
                             prev_test_obs = test_obs
                             test_obs, reward, test_done, _ = env.step(test_action)
-                            test_states.append(test_obs)
                             test_reward += reward
                             #if test_steps >= 100:
                              #   test_done = True
@@ -106,10 +102,11 @@ def train(sess, env, iters, batch_size, df=0.01):
             readout = sess.run(network, feed_dict={network_input: frame})
             #action = np.random.choice(range(env.action_space.n), p=readout.flatten())
             action = 2 if np.random.uniform() < readout.flatten()[0] else 3
+            index = action - 2
             #one_hot_action = np.zeros(env.action_space.n)
             #one_hot_action[action] = 1.
 
-            action_gradient = sess.run(grads, feed_dict={one_hot:np.array(action).reshape((1)), global_step:step, network_input:frame})
+            action_gradient = sess.run(grads, feed_dict={one_hot:np.array(index).reshape((1)), global_step:step, network_input:frame})
             action_gradients.append(action_gradient)
             prev_obs = obs
             obs, reward, done, _ = env.step(action)

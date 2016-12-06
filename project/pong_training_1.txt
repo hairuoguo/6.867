@@ -1,0 +1,432 @@
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcuda.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcurand.so locally
+[2016-12-06 13:29:15,149] Making new env: Pong-v0
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:924] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 0 with properties: 
+name: GeForce GTX 980 Ti
+major: 5 minor: 2 memoryClockRate (GHz) 1.228
+pciBusID 0000:01:00.0
+Total memory: 6.00GiB
+Free memory: 4.31GiB
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:126] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:806] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 980 Ti, pci bus id: 0000:01:00.0)
+Ep 1 Score: -21.0
+Ep 2 Score: -21.0
+Ep 3 Score: -21.0
+Ep 4 Score: -21.0
+Ep 5 Score: -21.0
+Ep 6 Score: -21.0
+Ep 7 Score: -21.0
+Ep 8 Score: -21.0
+Ep 9 Score: -21.0
+Ep 10 Score: -21.0
+Number of rounds: 10
+Average score per round: -21.0
+Test reward: -21.0
+Ep 11 Score: -21.0
+Ep 12 Score: -21.0
+Ep 13 Score: -21.0
+Ep 14 Score: -20.0
+Ep 15 Score: -21.0
+Ep 16 Score: -21.0
+Ep 17 Score: -21.0
+Ep 18 Score: -21.0
+Ep 19 Score: -21.0
+Ep 20 Score: -21.0
+Number of rounds: 20
+Average score per round: -20.9
+Test reward: -21.0
+Ep 21 Score: -20.0
+Ep 22 Score: -20.0
+Ep 23 Score: -21.0
+Ep 24 Score: -21.0
+Ep 25 Score: -21.0
+Ep 26 Score: -21.0
+Ep 27 Score: -21.0
+Ep 28 Score: -21.0
+Ep 29 Score: -21.0
+Ep 30 Score: -21.0
+Number of rounds: 30
+Average score per round: -20.8
+Test reward: -21.0
+Ep 31 Score: -21.0
+Ep 32 Score: -20.0
+Ep 33 Score: -21.0
+Ep 34 Score: -21.0
+Ep 35 Score: -21.0
+Ep 36 Score: -21.0
+Ep 37 Score: -20.0
+Ep 38 Score: -21.0
+Ep 39 Score: -21.0
+Ep 40 Score: -21.0
+Number of rounds: 40
+Average score per round: -20.8
+Test reward: -21.0
+Ep 41 Score: -20.0
+Ep 42 Score: -21.0
+Ep 43 Score: -20.0
+Ep 44 Score: -20.0
+Ep 45 Score: -21.0
+Ep 46 Score: -18.0
+Ep 47 Score: -21.0
+Ep 48 Score: -21.0
+Ep 49 Score: -19.0
+Ep 50 Score: -21.0
+Number of rounds: 50
+Average score per round: -20.2
+Test reward: -17.0
+Ep 51 Score: -21.0
+Ep 52 Score: -21.0
+Ep 53 Score: -20.0
+Ep 54 Score: -21.0
+Ep 55 Score: -21.0
+Ep 56 Score: -21.0
+Ep 57 Score: -21.0
+Ep 58 Score: -21.0
+Ep 59 Score: -20.0
+Ep 60 Score: -20.0
+Number of rounds: 60
+Average score per round: -20.7
+Test reward: -19.0
+Ep 61 Score: -21.0
+Ep 62 Score: -21.0
+Ep 63 Score: -21.0
+Ep 64 Score: -21.0
+Ep 65 Score: -20.0
+Ep 66 Score: -20.0
+Ep 67 Score: -21.0
+Ep 68 Score: -21.0
+Ep 69 Score: -21.0
+Ep 70 Score: -21.0
+Number of rounds: 70
+Average score per round: -20.8
+Test reward: -18.0
+Ep 71 Score: -19.0
+Ep 72 Score: -21.0
+Ep 73 Score: -21.0
+Ep 74 Score: -21.0
+Ep 75 Score: -21.0
+Ep 76 Score: -20.0
+Ep 77 Score: -19.0
+Ep 78 Score: -20.0
+Ep 79 Score: -20.0
+Ep 80 Score: -21.0
+Number of rounds: 80
+Average score per round: -20.3
+Test reward: -21.0
+Ep 81 Score: -21.0
+Ep 82 Score: -21.0
+Ep 83 Score: -21.0
+Ep 84 Score: -21.0
+Ep 85 Score: -19.0
+Ep 86 Score: -21.0
+Ep 87 Score: -21.0
+Ep 88 Score: -21.0
+Ep 89 Score: -21.0
+Ep 90 Score: -20.0
+Number of rounds: 90
+Average score per round: -20.7
+Test reward: -21.0
+Ep 91 Score: -21.0
+Ep 92 Score: -21.0
+Ep 93 Score: -21.0
+Ep 94 Score: -19.0
+Ep 95 Score: -19.0
+Ep 96 Score: -21.0
+Ep 97 Score: -21.0
+Ep 98 Score: -20.0
+Ep 99 Score: -21.0
+Ep 100 Score: -21.0
+Number of rounds: 100
+Average score per round: -20.5
+Test reward: -20.0
+Ep 101 Score: -21.0
+Ep 102 Score: -20.0
+Ep 103 Score: -21.0
+Ep 104 Score: -21.0
+Ep 105 Score: -21.0
+Ep 106 Score: -21.0
+Ep 107 Score: -21.0
+Ep 108 Score: -20.0
+Ep 109 Score: -21.0
+Ep 110 Score: -21.0
+Number of rounds: 110
+Average score per round: -20.8
+Test reward: -21.0
+Ep 111 Score: -21.0
+Ep 112 Score: -21.0
+Ep 113 Score: -21.0
+Ep 114 Score: -21.0
+Ep 115 Score: -21.0
+Ep 116 Score: -21.0
+Ep 117 Score: -20.0
+Ep 118 Score: -21.0
+Ep 119 Score: -20.0
+Ep 120 Score: -21.0
+Number of rounds: 120
+Average score per round: -20.8
+Test reward: -21.0
+Ep 121 Score: -20.0
+Ep 122 Score: -21.0
+Ep 123 Score: -21.0
+Ep 124 Score: -19.0
+Ep 125 Score: -20.0
+Ep 126 Score: -21.0
+Ep 127 Score: -21.0
+Ep 128 Score: -21.0
+Ep 129 Score: -21.0
+Ep 130 Score: -19.0
+Number of rounds: 130
+Average score per round: -20.4
+Test reward: -21.0
+Ep 131 Score: -20.0
+Ep 132 Score: -21.0
+Ep 133 Score: -21.0
+Ep 134 Score: -21.0
+Ep 135 Score: -21.0
+Ep 136 Score: -20.0
+Ep 137 Score: -20.0
+Ep 138 Score: -21.0
+Ep 139 Score: -21.0
+Ep 140 Score: -21.0
+Number of rounds: 140
+Average score per round: -20.7
+Test reward: -20.0
+Ep 141 Score: -19.0
+Ep 142 Score: -21.0
+Ep 143 Score: -21.0
+Ep 144 Score: -21.0
+Ep 145 Score: -21.0
+Ep 146 Score: -21.0
+Ep 147 Score: -21.0
+Ep 148 Score: -21.0
+Ep 149 Score: -21.0
+Ep 150 Score: -20.0
+Number of rounds: 150
+Average score per round: -20.7
+Test reward: -21.0
+Ep 151 Score: -21.0
+Ep 152 Score: -20.0
+Ep 153 Score: -21.0
+Ep 154 Score: -21.0
+Ep 155 Score: -21.0
+Ep 156 Score: -19.0
+Ep 157 Score: -20.0
+Ep 158 Score: -21.0
+Ep 159 Score: -21.0
+Ep 160 Score: -21.0
+Number of rounds: 160
+Average score per round: -20.6
+Test reward: -21.0
+Ep 161 Score: -21.0
+Ep 162 Score: -20.0
+Ep 163 Score: -21.0
+Ep 164 Score: -21.0
+Ep 165 Score: -21.0
+Ep 166 Score: -20.0
+Ep 167 Score: -21.0
+Ep 168 Score: -21.0
+Ep 169 Score: -20.0
+Ep 170 Score: -21.0
+Number of rounds: 170
+Average score per round: -20.7
+Test reward: -19.0
+Ep 171 Score: -21.0
+Ep 172 Score: -21.0
+Ep 173 Score: -20.0
+Ep 174 Score: -21.0
+Ep 175 Score: -20.0
+Ep 176 Score: -21.0
+Ep 177 Score: -21.0
+Ep 178 Score: -20.0
+Ep 179 Score: -21.0
+Ep 180 Score: -21.0
+Number of rounds: 180
+Average score per round: -20.7
+Test reward: -20.0
+Ep 181 Score: -21.0
+Ep 182 Score: -21.0
+Ep 183 Score: -21.0
+Ep 184 Score: -21.0
+Ep 185 Score: -21.0
+Ep 186 Score: -21.0
+Ep 187 Score: -21.0
+Ep 188 Score: -21.0
+Ep 189 Score: -19.0
+Ep 190 Score: -21.0
+Number of rounds: 190
+Average score per round: -20.8
+Test reward: -21.0
+Ep 191 Score: -20.0
+Ep 192 Score: -20.0
+Ep 193 Score: -20.0
+Ep 194 Score: -21.0
+Ep 195 Score: -20.0
+Ep 196 Score: -20.0
+Ep 197 Score: -21.0
+Ep 198 Score: -21.0
+Ep 199 Score: -21.0
+Ep 200 Score: -21.0
+Number of rounds: 200
+Average score per round: -20.5
+Test reward: -20.0
+Ep 201 Score: -20.0
+Ep 202 Score: -20.0
+Ep 203 Score: -20.0
+Ep 204 Score: -18.0
+Ep 205 Score: -21.0
+Ep 206 Score: -20.0
+Ep 207 Score: -20.0
+Ep 208 Score: -21.0
+Ep 209 Score: -20.0
+Ep 210 Score: -21.0
+Number of rounds: 210
+Average score per round: -20.1
+Test reward: -21.0
+Ep 211 Score: -20.0
+Ep 212 Score: -21.0
+Ep 213 Score: -19.0
+Ep 214 Score: -20.0
+Ep 215 Score: -21.0
+Ep 216 Score: -21.0
+Ep 217 Score: -20.0
+Ep 218 Score: -17.0
+Ep 219 Score: -20.0
+Ep 220 Score: -21.0
+Number of rounds: 220
+Average score per round: -20.0
+Test reward: -19.0
+Ep 221 Score: -19.0
+Ep 222 Score: -17.0
+Ep 223 Score: -16.0
+Ep 224 Score: -18.0
+Ep 225 Score: -18.0
+Ep 226 Score: -17.0
+Ep 227 Score: -18.0
+Ep 228 Score: -20.0
+Ep 229 Score: -19.0
+Ep 230 Score: -21.0
+Number of rounds: 230
+Average score per round: -18.3
+Test reward: -16.0
+Ep 231 Score: -19.0
+Ep 232 Score: -18.0
+Ep 233 Score: -18.0
+Ep 234 Score: -20.0
+Ep 235 Score: -19.0
+Ep 236 Score: -19.0
+Ep 237 Score: -17.0
+Ep 238 Score: -19.0
+Ep 239 Score: -19.0
+Ep 240 Score: -19.0
+Number of rounds: 240
+Average score per round: -18.7
+Test reward: -20.0
+Ep 241 Score: -15.0
+Ep 242 Score: -15.0
+Ep 243 Score: -20.0
+Ep 244 Score: -17.0
+Ep 245 Score: -19.0
+Ep 246 Score: -19.0
+Ep 247 Score: -19.0
+Ep 248 Score: -18.0
+Ep 249 Score: -18.0
+Ep 250 Score: -19.0
+Number of rounds: 250
+Average score per round: -17.9
+Test reward: -18.0
+Ep 251 Score: -19.0
+Ep 252 Score: -17.0
+Ep 253 Score: -16.0
+Ep 254 Score: -20.0
+Ep 255 Score: -18.0
+Ep 256 Score: -15.0
+Ep 257 Score: -18.0
+Ep 258 Score: -16.0
+Ep 259 Score: -18.0
+Ep 260 Score: -18.0
+Number of rounds: 260
+Average score per round: -17.5
+Test reward: -14.0
+Ep 261 Score: -14.0
+Ep 262 Score: -21.0
+Ep 263 Score: -16.0
+Ep 264 Score: -16.0
+Ep 265 Score: -20.0
+Ep 266 Score: -18.0
+Ep 267 Score: -18.0
+Ep 268 Score: -17.0
+Ep 269 Score: -18.0
+Ep 270 Score: -20.0
+Number of rounds: 270
+Average score per round: -17.8
+Test reward: -20.0
+Ep 271 Score: -20.0
+Ep 272 Score: -19.0
+Ep 273 Score: -19.0
+Ep 274 Score: -19.0
+Ep 275 Score: -15.0
+Ep 276 Score: -20.0
+Ep 277 Score: -19.0
+Ep 278 Score: -19.0
+Ep 279 Score: -16.0
+Ep 280 Score: -18.0
+Number of rounds: 280
+Average score per round: -18.4
+Test reward: -16.0
+Ep 281 Score: -21.0
+Ep 282 Score: -21.0
+Ep 283 Score: -21.0
+Ep 284 Score: -19.0
+Ep 285 Score: -19.0
+Ep 286 Score: -21.0
+Ep 287 Score: -19.0
+Ep 288 Score: -20.0
+Ep 289 Score: -20.0
+Ep 290 Score: -19.0
+Number of rounds: 290
+Average score per round: -20.0
+Test reward: -20.0
+Ep 291 Score: -16.0
+Ep 292 Score: -20.0
+Ep 293 Score: -20.0
+Ep 294 Score: -19.0
+Ep 295 Score: -21.0
+Ep 296 Score: -20.0
+Ep 297 Score: -21.0
+Ep 298 Score: -21.0
+Ep 299 Score: -21.0
+Ep 300 Score: -17.0
+Number of rounds: 300
+Average score per round: -19.6
+Test reward: -21.0
+Ep 301 Score: -19.0
+Ep 302 Score: -21.0
+Ep 303 Score: -18.0
+Ep 304 Score: -21.0
+Ep 305 Score: -18.0
+Ep 306 Score: -20.0
+Ep 307 Score: -19.0
+Ep 308 Score: -19.0
+Ep 309 Score: -19.0
+Ep 310 Score: -15.0
+Number of rounds: 310
+Average score per round: -18.9
+Test reward: -19.0
+Ep 311 Score: -15.0
+Ep 312 Score: -20.0
+Ep 313 Score: -18.0
+Ep 314 Score: -19.0
+Ep 315 Score: -17.0
+Ep 316 Score: -21.0
+Ep 317 Score: -19.0
+Ep 318 Score: -19.0
+Ep 319 Score: -19.0
+Ep 320 Score: -21.0
+Number of rounds: 320
+Average score per round: -18.8
+Test reward: -21.0
