@@ -4987,3 +4987,5 @@ Ep 3824 Score: -13.0
 Ep 3825 Score: -14.0
 Ep 3826 Score: -9.0
 Ep 3827 Score: -12.0
+Ep 3828 Score: -8.0
+Ep 3829 Score: -17.0
