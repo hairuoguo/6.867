@@ -27,20 +27,21 @@ def bias_variable(shape, var_name):
     variable = tf.get_variable(var_name, shape, initializer=tf.constant_initializer(0.0))
     return variable
 
-def make_network(network_input, num_actions):
-    W1 = weight_variable([80*80, 200], "W1") 
+def make_network(network_input, num_actions, visualize=False):
+    network_input = tf.reshape(network_input, shape=[-1, 80, 80, 1])
+    W1 = weight_variable([80, 80, 1, 200], "W1") 
     b1 = bias_variable([200], "b1")
-    l1 = tf.nn.relu(tf.matmul(network_input, W1) + b1, "l1")
-    print(l1.get_shape())
+    conv1 = tf.nn.conv2d(network_input, W1, strides=[1,1,1,1], padding="VALID", name="conv1")
+    l1 = tf.nn.relu(tf.nn.bias_add(conv1, b1), name="relu1") 
 
-    W2 = weight_variable([200, num_actions], "W2")
+    W2 = weight_variable([200, num_actions], "W2") 
     b2 = bias_variable([num_actions], "b2")
-    print(W2.get_shape())
-    print(b2.get_shape())
-    readout = tf.nn.softmax(tf.matmul(l1, W2) + b2)
-    print(readout.get_shape())
 
-    return W1, l1, W2, readout
+    # l1 reshape is (1, 200)
+    l1 = tf.reshape(l1, [-1, W2.get_shape().as_list()[0]]) 
+    readout = tf.nn.softmax(tf.matmul(l1, W2) + b2)
+
+    return l1, readout
 
 def loss(readout, index):
     #difference between confidence of 1 and chosen action
@@ -48,10 +49,10 @@ def loss(readout, index):
 
 
 def train(sess, env, iters, batch_size, df=0.01, visualize=False):
-    network_input = tf.placeholder(tf.float32, shape=[1, 80*80]) 
+    network_input = tf.placeholder(tf.float32, shape=[80, 80]) 
     global_step = tf.placeholder(tf.int32)
     one_hot = tf.placeholder(tf.int32, shape=[1])
-    W1, l1, W2, network = make_network(network_input, 2)
+    l1, network = make_network(network_input, 2)
     one_loss = loss(network, one_hot)
     learning_rate_op = tf.maximum(0.00001, tf.train.exponential_decay(0.0001, global_step, 50000, 0.99, staircase=True))
     opt = tf.train.RMSPropOptimizer(learning_rate=learning_rate_op, momentum=0.95, epsilon=0.01)
@@ -112,25 +113,21 @@ def train(sess, env, iters, batch_size, df=0.01, visualize=False):
                         print("Test reward: " + str(test_reward))
 
                         results.append((num_eps, batch_sum/batch_size, test_reward))
-                        print(results)
                     ''''''
                     batch_gradients = [] #list of summed gradients from each episode in batch
                     batch_sum = 0.
                     env.reset()
                 reward_sum = 0
                 if num_eps % 100 == 0:
-                    # load saved results, and append new results
                     saved_results = pickle.load(open('results.p', 'rb'))
                     saved_results = saved_results + results
                     pickle.dump(saved_results, open('results.p', 'wb'))
                     results = []
 
                     saver.save(sess, 'my_model', global_step=num_eps)
-                    
                 num_eps += 1
             frame = preprocess_frame(prev_obs, obs)
             readout = sess.run(network, feed_dict={network_input: frame})
-
             #action = np.random.choice(range(env.action_space.n), p=readout.flatten())
             action = 2 if np.random.uniform() < readout.flatten()[0] else 3
             index = action - 2
@@ -145,31 +142,23 @@ def train(sess, env, iters, batch_size, df=0.01, visualize=False):
             #if step - ep_start_step >= 100: #limit the number of steps per episode (or else it might just do the same thing over and over)
              #   done = True
 
-            break;
-            # Visualize network
-            if done and visualize:
-                if num_eps % 1 == 0: # do this every n eps?
-                    weights1, layer1, weights2 = sess.run([W1, l1, W2], feed_dict={network_input: frame})
-                    visualize_net(layer1, "layer1_ep{}.png".format(num_eps))
-                    visualize_net(weights1, "weights1_ep{}.png".format(num_eps))
-                    visualize_net(weights2, "weights2_ep{}.png".format(num_eps))
 
-                    # take column slice of [80*80, 200] weights1 and reshape into [80, 80], so it looks like frame
-                    column_number = 0 # can be any of 200 slices 
-                    frame_weights1 = weights1[:, column_number].reshape((80, 80))
-                    visualize_net(frame_weights1, "frame1_ep{}.png".format(num_eps))
-                    # break;
+            #Visualize network
+            if done and visualize:
+                if num_eps % 1 == 0:
+                    layer1 = sess.run(l1, feed_dict={network_input: frame})
+                    visualize_net(layer1, "layer1_ep{}.png".format(num_eps))
 
 
 def preprocess_frame(prev_frame, frame):
     difference = scipy.misc.imresize((frame-prev_frame)/255., (80, 80))
     difference = 0.299*difference[:, :, 0] + 0.587*difference[:, :, 1] + 0.114*difference[:, :, 2]
-    return difference.reshape((1, -1))
+    return difference
 
 def main():
     env = gym.make('Pong-v0')
     sess = tf.Session()
-    train(sess, env, 10000000, 10)
+    train(sess, env, 10000000, 10, visualize=False)
     #graph_results()
     
 
