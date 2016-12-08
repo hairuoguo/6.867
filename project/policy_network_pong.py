@@ -83,7 +83,7 @@ def train(sess, env, iters, batch_size, df=0.01):
                             test_steps += 1
                             test_frame = preprocess_frame(prev_test_obs, test_obs)
                             test_readout = sess.run(network, feed_dict={network_input: test_frame})
-                            test_action = 2 if np.random.uniform() < test_readout.flatten()[0] else 3
+                            test_action = np.argmax(test_readout.flatten()) + 2
                             prev_test_obs = test_obs
                             test_obs, reward, test_done, _ = env.step(test_action)
                             test_reward += reward
@@ -124,7 +124,7 @@ def main():
     env = gym.make('Pong-v0')
     sess = tf.Session()
     #network_input = tf.placeholder(tf.float32, shape=[80*80, 1]) 
-    train(sess, env, 10000000, 10)
+    train(sess, env, 1000000000, 10)
     
 
 if __name__ == "__main__":
