@@ -19,6 +19,7 @@ def graph_results():
     plt.legend()
     plt.savefig('plot.png')
 
+
 def weight_variable(shape, var_name):
     variable = tf.get_variable(var_name, shape, initializer=tf.contrib.layers.xavier_initializer())
     return variable
@@ -27,22 +28,49 @@ def bias_variable(shape, var_name):
     variable = tf.get_variable(var_name, shape, initializer=tf.constant_initializer(0.0))
     return variable
 
+def conv_2d(x, W, stride):
+    return tf.nn.conv2d(x, W, strides=[1, stride, stride, 1], padding='VALID')
+
+def max_pool_2x2(x):
+    return tf.nn.max_pool(x, ksize=[1, 2, 2, 1], strides=[1, 2, 2, 1], padding='VALID')
+
 def make_network(network_input, num_actions, visualize=False):
     network_input = tf.reshape(network_input, shape=[-1, 80, 80, 1])
-    W1 = weight_variable([80, 80, 1, 200], "W1") 
-    b1 = bias_variable([200], "b1")
-    conv1 = tf.nn.conv2d(network_input, W1, strides=[1,1,1,1], padding="VALID", name="conv1")
-    l1 = tf.nn.relu(tf.nn.bias_add(conv1, b1), name="relu1") 
 
-    W2 = weight_variable([200, num_actions], "W2") 
-    b2 = bias_variable([num_actions], "b2")
 
-    # l1 reshape is (1, 200)
-    l1 = tf.reshape(l1, [-1, W2.get_shape().as_list()[0]]) 
-    readout = tf.nn.softmax(tf.matmul(l1, W2) + b2)
+    W_conv1 = weight_variable([4, 4, 1, 32], "W_conv1") 
+    b_conv1 = bias_variable([32], "b_conv1")
 
-    return l1, readout
+    conv1 = tf.nn.relu(conv_2d(network_input, W_conv1, 2) + b_conv1) 
+    #pool1 = max_pool_2x2(conv1)
 
+    W_conv2 = weight_variable([4, 4, 32, 64], "W_conv2")
+    b_conv2 = bias_variable([64], "b_conv2")
+
+    conv2 = tf.nn.relu(conv_2d(conv1, W_conv2, 2) + b_conv2)
+    #pool2 = max_pool_2x2(conv2)
+    ''' 
+    W_conv3 = weight_variable([3, 3, 64, 64], "W_conv3")
+    b_conv3 = bias_variable([64], "b_conv3")
+
+    conv3 = tf.nn.relu(conv_2d(conv2, W_conv3, 1) + b_conv3)
+    
+    shape = conv3.get_shape().as_list()
+    conv3_reshaped = tf.reshape(conv3, [-1, reduce(lambda x, y: x * y, shape[1:])])
+    '''
+    shape = conv2.get_shape().as_list()
+    conv2_reshaped = tf.reshape(conv2, [-1, reduce(lambda x, y: x * y, shape[1:])])
+    
+    W2 = weight_variable([reduce(lambda x, y,: x*y, shape[1:]), num_actions], "Wl1") 
+    b2 = bias_variable([num_actions], "bl1")
+    '''
+    readout = tf.nn.softmax(tf.matmul(conv3_reshaped, W2) + b2)
+
+    return conv3_reshaped, readout
+    '''
+    readout = tf.nn.softmax(tf.matmul(conv2_reshaped, W2) + b2)
+
+    return conv2_reshaped, readout
 def loss(readout, index):
     #difference between confidence of 1 and chosen action
     return tf.nn.sparse_softmax_cross_entropy_with_logits(readout, index)
@@ -104,7 +132,7 @@ def train(sess, env, iters, batch_size, df=0.01, visualize=False):
                             test_steps += 1
                             test_frame = preprocess_frame(prev_test_obs, test_obs)
                             test_readout = sess.run(network, feed_dict={network_input: test_frame})
-                            test_action = 2 if np.random.uniform() < test_readout.flatten()[0] else 3
+                            test_action = np.argmax(test_readout.flatten()) + 2
                             prev_test_obs = test_obs
                             test_obs, reward, test_done, _ = env.step(test_action)
                             test_reward += reward
@@ -124,7 +152,7 @@ def train(sess, env, iters, batch_size, df=0.01, visualize=False):
                     pickle.dump(saved_results, open('results.p', 'wb'))
                     results = []
 
-                    saver.save(sess, 'my_model', global_step=num_eps)
+                    saver.save(sess, 'my_model_conv_2_layers', global_step=num_eps)
                 num_eps += 1
             frame = preprocess_frame(prev_obs, obs)
             readout = sess.run(network, feed_dict={network_input: frame})
@@ -156,9 +184,10 @@ def preprocess_frame(prev_frame, frame):
     return difference
 
 def main():
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.25)
     env = gym.make('Pong-v0')
-    sess = tf.Session()
-    train(sess, env, 10000000, 10, visualize=False)
+    sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
+    train(sess, env, 1000000000, 10, visualize=False)
     #graph_results()
     
 

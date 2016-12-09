@@ -4989,3 +4989,502 @@ Ep 3826 Score: -9.0
 Ep 3827 Score: -12.0
 Ep 3828 Score: -8.0
 Ep 3829 Score: -17.0
+Ep 3830 Score: -17.0
+Number of rounds: 3830
+Average score per round: -13.4
+Test reward: -11.0
+Ep 3831 Score: -10.0
+Ep 3832 Score: -13.0
+Ep 3833 Score: -13.0
+Ep 3834 Score: -15.0
+Ep 3835 Score: -19.0
+Ep 3836 Score: -16.0
+Ep 3837 Score: -17.0
+Ep 3838 Score: -17.0
+Ep 3839 Score: -13.0
+Ep 3840 Score: -16.0
+Number of rounds: 3840
+Average score per round: -14.9
+Test reward: -10.0
+Ep 3841 Score: -17.0
+Ep 3842 Score: -13.0
+Ep 3843 Score: -9.0
+Ep 3844 Score: -12.0
+Ep 3845 Score: -12.0
+Ep 3846 Score: -15.0
+Ep 3847 Score: -13.0
+Ep 3848 Score: -11.0
+Ep 3849 Score: -15.0
+Ep 3850 Score: -11.0
+Number of rounds: 3850
+Average score per round: -12.8
+Test reward: -15.0
+Ep 3851 Score: -15.0
+Ep 3852 Score: -8.0
+Ep 3853 Score: -14.0
+Ep 3854 Score: -14.0
+Ep 3855 Score: -16.0
+Ep 3856 Score: -16.0
+Ep 3857 Score: -16.0
+Ep 3858 Score: -8.0
+Ep 3859 Score: -14.0
+Ep 3860 Score: -9.0
+Number of rounds: 3860
+Average score per round: -13.0
+Test reward: -16.0
+Ep 3861 Score: -17.0
+Ep 3862 Score: -17.0
+Ep 3863 Score: -17.0
+Ep 3864 Score: -18.0
+Ep 3865 Score: -14.0
+Ep 3866 Score: -10.0
+Ep 3867 Score: -9.0
+Ep 3868 Score: -14.0
+Ep 3869 Score: -15.0
+Ep 3870 Score: -18.0
+Number of rounds: 3870
+Average score per round: -14.9
+Test reward: -10.0
+Ep 3871 Score: -18.0
+Ep 3872 Score: -16.0
+Ep 3873 Score: -16.0
+Ep 3874 Score: -8.0
+Ep 3875 Score: -18.0
+Ep 3876 Score: -14.0
+Ep 3877 Score: -13.0
+Ep 3878 Score: -15.0
+Ep 3879 Score: -14.0
+Ep 3880 Score: -16.0
+Number of rounds: 3880
+Average score per round: -14.8
+Test reward: -14.0
+Ep 3881 Score: -12.0
+Ep 3882 Score: -14.0
+Ep 3883 Score: -20.0
+Ep 3884 Score: -10.0
+Ep 3885 Score: -13.0
+Ep 3886 Score: -14.0
+Ep 3887 Score: -11.0
+Ep 3888 Score: -15.0
+Ep 3889 Score: -14.0
+Ep 3890 Score: -20.0
+Number of rounds: 3890
+Average score per round: -14.3
+Test reward: -15.0
+Ep 3891 Score: -17.0
+Ep 3892 Score: -11.0
+Ep 3893 Score: -14.0
+Ep 3894 Score: -16.0
+Ep 3895 Score: -15.0
+Ep 3896 Score: -16.0
+Ep 3897 Score: -15.0
+Ep 3898 Score: -13.0
+Ep 3899 Score: -12.0
+Ep 3900 Score: -15.0
+Number of rounds: 3900
+Average score per round: -14.4
+Test reward: -15.0
+Ep 3901 Score: -13.0
+Ep 3902 Score: -7.0
+Ep 3903 Score: -12.0
+Ep 3904 Score: -12.0
+Ep 3905 Score: -9.0
+Ep 3906 Score: -10.0
+Ep 3907 Score: -17.0
+Ep 3908 Score: -17.0
+Ep 3909 Score: -15.0
+Ep 3910 Score: -13.0
+Number of rounds: 3910
+Average score per round: -12.5
+Test reward: -13.0
+Ep 3911 Score: -15.0
+Ep 3912 Score: -12.0
+Ep 3913 Score: -16.0
+Ep 3914 Score: -14.0
+Ep 3915 Score: -16.0
+Ep 3916 Score: -9.0
+Ep 3917 Score: -16.0
+Ep 3918 Score: -14.0
+Ep 3919 Score: -14.0
+Ep 3920 Score: -12.0
+Number of rounds: 3920
+Average score per round: -13.8
+Test reward: -18.0
+Ep 3921 Score: -12.0
+Ep 3922 Score: -15.0
+Ep 3923 Score: -11.0
+Ep 3924 Score: -12.0
+Ep 3925 Score: -15.0
+Ep 3926 Score: -11.0
+Ep 3927 Score: -14.0
+Ep 3928 Score: -18.0
+Ep 3929 Score: -10.0
+Ep 3930 Score: -14.0
+Number of rounds: 3930
+Average score per round: -13.2
+Test reward: -13.0
+Ep 3931 Score: -15.0
+Ep 3932 Score: -13.0
+Ep 3933 Score: -13.0
+Ep 3934 Score: -6.0
+Ep 3935 Score: -14.0
+Ep 3936 Score: -13.0
+Ep 3937 Score: -15.0
+Ep 3938 Score: -10.0
+Ep 3939 Score: -10.0
+Ep 3940 Score: -18.0
+Number of rounds: 3940
+Average score per round: -12.7
+Test reward: -13.0
+Ep 3941 Score: -16.0
+Ep 3942 Score: -18.0
+Ep 3943 Score: -9.0
+Ep 3944 Score: -15.0
+Ep 3945 Score: -12.0
+Ep 3946 Score: -17.0
+Ep 3947 Score: -16.0
+Ep 3948 Score: -16.0
+Ep 3949 Score: -14.0
+Ep 3950 Score: -12.0
+Number of rounds: 3950
+Average score per round: -14.5
+Test reward: -16.0
+Ep 3951 Score: -13.0
+Ep 3952 Score: -13.0
+Ep 3953 Score: -15.0
+Ep 3954 Score: -15.0
+Ep 3955 Score: -14.0
+Ep 3956 Score: -12.0
+Ep 3957 Score: -13.0
+Ep 3958 Score: -15.0
+Ep 3959 Score: -15.0
+Ep 3960 Score: -10.0
+Number of rounds: 3960
+Average score per round: -13.5
+Test reward: -14.0
+Ep 3961 Score: -11.0
+Ep 3962 Score: -11.0
+Ep 3963 Score: -17.0
+Ep 3964 Score: -14.0
+Ep 3965 Score: -13.0
+Ep 3966 Score: -13.0
+Ep 3967 Score: -16.0
+Ep 3968 Score: -15.0
+Ep 3969 Score: -20.0
+Ep 3970 Score: -18.0
+Number of rounds: 3970
+Average score per round: -14.8
+Test reward: -10.0
+Ep 3971 Score: -12.0
+Ep 3972 Score: -19.0
+Ep 3973 Score: -8.0
+Ep 3974 Score: -13.0
+Ep 3975 Score: -12.0
+Ep 3976 Score: -17.0
+Ep 3977 Score: -11.0
+Ep 3978 Score: -21.0
+Ep 3979 Score: -11.0
+Ep 3980 Score: -15.0
+Number of rounds: 3980
+Average score per round: -13.9
+Test reward: -13.0
+Ep 3981 Score: -9.0
+Ep 3982 Score: -13.0
+Ep 3983 Score: -15.0
+Ep 3984 Score: -19.0
+Ep 3985 Score: -13.0
+Ep 3986 Score: -13.0
+Ep 3987 Score: -11.0
+Ep 3988 Score: -17.0
+Ep 3989 Score: -15.0
+Ep 3990 Score: -16.0
+Number of rounds: 3990
+Average score per round: -14.1
+Test reward: -12.0
+Ep 3991 Score: -11.0
+Ep 3992 Score: -16.0
+Ep 3993 Score: -16.0
+Ep 3994 Score: -12.0
+Ep 3995 Score: -9.0
+Ep 3996 Score: -11.0
+Ep 3997 Score: -13.0
+Ep 3998 Score: -14.0
+Ep 3999 Score: -18.0
+Ep 4000 Score: -18.0
+Number of rounds: 4000
+Average score per round: -13.8
+Test reward: -13.0
+Ep 4001 Score: -16.0
+Ep 4002 Score: -13.0
+Ep 4003 Score: -16.0
+Ep 4004 Score: -18.0
+Ep 4005 Score: -9.0
+Ep 4006 Score: -16.0
+Ep 4007 Score: -16.0
+Ep 4008 Score: -16.0
+Ep 4009 Score: -16.0
+Ep 4010 Score: -16.0
+Number of rounds: 4010
+Average score per round: -15.2
+Test reward: -12.0
+Ep 4011 Score: -13.0
+Ep 4012 Score: -17.0
+Ep 4013 Score: -14.0
+Ep 4014 Score: -15.0
+Ep 4015 Score: -11.0
+Ep 4016 Score: -15.0
+Ep 4017 Score: -16.0
+Ep 4018 Score: -15.0
+Ep 4019 Score: -8.0
+Ep 4020 Score: -13.0
+Number of rounds: 4020
+Average score per round: -13.7
+Test reward: -11.0
+Ep 4021 Score: -16.0
+Ep 4022 Score: -11.0
+Ep 4023 Score: -16.0
+Ep 4024 Score: -17.0
+Ep 4025 Score: -14.0
+Ep 4026 Score: -17.0
+Ep 4027 Score: -15.0
+Ep 4028 Score: -17.0
+Ep 4029 Score: -8.0
+Ep 4030 Score: -16.0
+Number of rounds: 4030
+Average score per round: -14.7
+Test reward: -11.0
+Ep 4031 Score: -17.0
+Ep 4032 Score: -13.0
+Ep 4033 Score: -14.0
+Ep 4034 Score: -10.0
+Ep 4035 Score: -15.0
+Ep 4036 Score: -16.0
+Ep 4037 Score: -15.0
+Ep 4038 Score: -7.0
+Ep 4039 Score: -19.0
+Ep 4040 Score: -18.0
+Number of rounds: 4040
+Average score per round: -14.4
+Test reward: -15.0
+Ep 4041 Score: -19.0
+Ep 4042 Score: -16.0
+Ep 4043 Score: -13.0
+Ep 4044 Score: -17.0
+Ep 4045 Score: -16.0
+Ep 4046 Score: -14.0
+Ep 4047 Score: -15.0
+Ep 4048 Score: -12.0
+Ep 4049 Score: -17.0
+Ep 4050 Score: -11.0
+Number of rounds: 4050
+Average score per round: -15.0
+Test reward: -11.0
+Ep 4051 Score: -12.0
+Ep 4052 Score: -11.0
+Ep 4053 Score: -9.0
+Ep 4054 Score: -13.0
+Ep 4055 Score: -18.0
+Ep 4056 Score: -10.0
+Ep 4057 Score: -16.0
+Ep 4058 Score: -14.0
+Ep 4059 Score: -18.0
+Ep 4060 Score: -16.0
+Number of rounds: 4060
+Average score per round: -13.7
+Test reward: -13.0
+Ep 4061 Score: -11.0
+Ep 4062 Score: -16.0
+Ep 4063 Score: -10.0
+Ep 4064 Score: -9.0
+Ep 4065 Score: -19.0
+Ep 4066 Score: -13.0
+Ep 4067 Score: -14.0
+Ep 4068 Score: -14.0
+Ep 4069 Score: -17.0
+Ep 4070 Score: -16.0
+Number of rounds: 4070
+Average score per round: -13.9
+Test reward: -10.0
+Ep 4071 Score: -10.0
+Ep 4072 Score: -11.0
+Ep 4073 Score: -14.0
+Ep 4074 Score: -15.0
+Ep 4075 Score: -6.0
+Ep 4076 Score: -12.0
+Ep 4077 Score: -10.0
+Ep 4078 Score: -9.0
+Ep 4079 Score: -8.0
+Ep 4080 Score: -9.0
+Number of rounds: 4080
+Average score per round: -10.4
+Test reward: -17.0
+Ep 4081 Score: -15.0
+Ep 4082 Score: -12.0
+Ep 4083 Score: -17.0
+Ep 4084 Score: -13.0
+Ep 4085 Score: -15.0
+Ep 4086 Score: -14.0
+Ep 4087 Score: -11.0
+Ep 4088 Score: -14.0
+Ep 4089 Score: -15.0
+Ep 4090 Score: -11.0
+Number of rounds: 4090
+Average score per round: -13.7
+Test reward: -18.0
+Ep 4091 Score: -13.0
+Ep 4092 Score: -10.0
+Ep 4093 Score: -17.0
+Ep 4094 Score: -12.0
+Ep 4095 Score: -14.0
+Ep 4096 Score: -16.0
+Ep 4097 Score: -12.0
+Ep 4098 Score: -10.0
+Ep 4099 Score: -12.0
+Ep 4100 Score: -16.0
+Number of rounds: 4100
+Average score per round: -13.2
+Test reward: -16.0
+Ep 4101 Score: -15.0
+Ep 4102 Score: -9.0
+Ep 4103 Score: -13.0
+Ep 4104 Score: -12.0
+Ep 4105 Score: -12.0
+Ep 4106 Score: -14.0
+Ep 4107 Score: -13.0
+Ep 4108 Score: -15.0
+Ep 4109 Score: -14.0
+Ep 4110 Score: -16.0
+Number of rounds: 4110
+Average score per round: -13.3
+Test reward: -14.0
+Ep 4111 Score: -8.0
+Ep 4112 Score: -14.0
+Ep 4113 Score: -18.0
+Ep 4114 Score: -17.0
+Ep 4115 Score: -10.0
+Ep 4116 Score: -13.0
+Ep 4117 Score: -13.0
+Ep 4118 Score: -11.0
+Ep 4119 Score: -17.0
+Ep 4120 Score: -15.0
+Number of rounds: 4120
+Average score per round: -13.6
+Test reward: -12.0
+Ep 4121 Score: -12.0
+Ep 4122 Score: -16.0
+Ep 4123 Score: -16.0
+Ep 4124 Score: -12.0
+Ep 4125 Score: -15.0
+Ep 4126 Score: -14.0
+Ep 4127 Score: -18.0
+Ep 4128 Score: -13.0
+Ep 4129 Score: -16.0
+Ep 4130 Score: -10.0
+Number of rounds: 4130
+Average score per round: -14.2
+Test reward: -9.0
+Ep 4131 Score: -8.0
+Ep 4132 Score: -15.0
+Ep 4133 Score: -12.0
+Ep 4134 Score: -16.0
+Ep 4135 Score: -10.0
+Ep 4136 Score: -17.0
+Ep 4137 Score: -13.0
+Ep 4138 Score: -11.0
+Ep 4139 Score: -12.0
+Ep 4140 Score: -14.0
+Number of rounds: 4140
+Average score per round: -12.8
+Test reward: -18.0
+Ep 4141 Score: -17.0
+Ep 4142 Score: -16.0
+Ep 4143 Score: -13.0
+Ep 4144 Score: -17.0
+Ep 4145 Score: -11.0
+Ep 4146 Score: -15.0
+Ep 4147 Score: -18.0
+Ep 4148 Score: -13.0
+Ep 4149 Score: -8.0
+Ep 4150 Score: -12.0
+Number of rounds: 4150
+Average score per round: -14.0
+Test reward: -17.0
+Ep 4151 Score: -11.0
+Ep 4152 Score: -13.0
+Ep 4153 Score: -15.0
+Ep 4154 Score: -13.0
+Ep 4155 Score: -7.0
+Ep 4156 Score: -16.0
+Ep 4157 Score: -15.0
+Ep 4158 Score: -18.0
+Ep 4159 Score: -16.0
+Ep 4160 Score: -9.0
+Number of rounds: 4160
+Average score per round: -13.3
+Test reward: -8.0
+Ep 4161 Score: -16.0
+Ep 4162 Score: -14.0
+Ep 4163 Score: -17.0
+Ep 4164 Score: -12.0
+Ep 4165 Score: -12.0
+Ep 4166 Score: -14.0
+Ep 4167 Score: -13.0
+Ep 4168 Score: -14.0
+Ep 4169 Score: -15.0
+Ep 4170 Score: -15.0
+Number of rounds: 4170
+Average score per round: -14.2
+Test reward: -11.0
+Ep 4171 Score: -11.0
+Ep 4172 Score: -17.0
+Ep 4173 Score: -12.0
+Ep 4174 Score: -15.0
+Ep 4175 Score: -11.0
+Ep 4176 Score: -14.0
+Ep 4177 Score: -20.0
+Ep 4178 Score: -17.0
+Ep 4179 Score: -14.0
+Ep 4180 Score: -18.0
+Number of rounds: 4180
+Average score per round: -14.9
+Test reward: -12.0
+Ep 4181 Score: -14.0
+Ep 4182 Score: -11.0
+Ep 4183 Score: -13.0
+Ep 4184 Score: -14.0
+Ep 4185 Score: -14.0
+Ep 4186 Score: -14.0
+Ep 4187 Score: -14.0
+Ep 4188 Score: -8.0
+Ep 4189 Score: -14.0
+Ep 4190 Score: -11.0
+Number of rounds: 4190
+Average score per round: -12.7
+Test reward: -17.0
+Ep 4191 Score: -15.0
+Ep 4192 Score: -13.0
+Ep 4193 Score: -15.0
+Ep 4194 Score: -17.0
+Ep 4195 Score: -5.0
+Ep 4196 Score: -13.0
+Ep 4197 Score: -7.0
+Ep 4198 Score: -17.0
+Ep 4199 Score: -11.0
+Ep 4200 Score: -11.0
+Number of rounds: 4200
+Average score per round: -12.4
+Test reward: -9.0
+Traceback (most recent call last):
+  File "policy_network_pong.py", line 131, in <module>
+    frame = preprocess_frame(prev_obs, obs)
+  File "policy_network_pong.py", line 127, in main
+    
+  File "policy_network_pong.py", line 99, in train
+    prev_test_obs = np.zeros(obs.shape)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/training/saver.py", line 1061, in save
+    self.export_meta_graph(meta_graph_filename)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/training/saver.py", line 1079, in export_meta_graph
+    add_shapes=True),
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/framework/ops.py", line 2117, in as_graph_def
+    raise ValueError("GraphDef cannot be larger than 2GB.")
+ValueError: GraphDef cannot be larger than 2GB.
