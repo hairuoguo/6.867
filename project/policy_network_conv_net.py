@@ -58,19 +58,22 @@ def make_network(network_input, num_actions, visualize=False):
     shape = conv3.get_shape().as_list()
     conv3_reshaped = tf.reshape(conv3, [-1, reduce(lambda x, y: x * y, shape[1:])])
     '''
+
     shape = conv2.get_shape().as_list()
     conv2_reshaped = tf.reshape(conv2, [-1, reduce(lambda x, y: x * y, shape[1:])])
+     
+    W_fc1 = weight_variable([reduce(lambda x, y,: x*y, shape[1:]), 200], "W_fc1") 
+    b_fc1 = bias_variable([200], "b_fc1")
     
-    W2 = weight_variable([reduce(lambda x, y,: x*y, shape[1:]), num_actions], "Wl1") 
-    b2 = bias_variable([num_actions], "bl1")
-    '''
-    readout = tf.nn.softmax(tf.matmul(conv3_reshaped, W2) + b2)
+    fc1 = tf.nn.relu(tf.matmul(conv2_reshaped, W_fc1) + b_fc1)
+    
+    W_fc2 = weight_variable([200, num_actions], "W_fc2") 
+    b_fc2 = bias_variable([num_actions], "b_fc2")
+    
+    readout = tf.nn.softmax(tf.matmul(fc1, W_fc2) + b_fc2)
 
-    return conv3_reshaped, readout
-    '''
-    readout = tf.nn.softmax(tf.matmul(conv2_reshaped, W2) + b2)
-
-    return conv2_reshaped, readout
+    return readout
+    
 def loss(readout, index):
     #difference between confidence of 1 and chosen action
     return tf.nn.sparse_softmax_cross_entropy_with_logits(readout, index)
@@ -80,9 +83,9 @@ def train(sess, env, iters, batch_size, df=0.01, visualize=False):
     network_input = tf.placeholder(tf.float32, shape=[80, 80]) 
     global_step = tf.placeholder(tf.int32)
     one_hot = tf.placeholder(tf.int32, shape=[1])
-    l1, network = make_network(network_input, 2)
+    network = make_network(network_input, 2)
     one_loss = loss(network, one_hot)
-    learning_rate_op = tf.maximum(0.00001, tf.train.exponential_decay(0.0001, global_step, 50000, 0.99, staircase=True))
+    learning_rate_op = tf.maximum(0.00001, tf.train.exponential_decay(0.01, global_step, 50000, 0.99, staircase=True))
     opt = tf.train.RMSPropOptimizer(learning_rate=learning_rate_op, momentum=0.95, epsilon=0.01)
     gradstep = opt.compute_gradients(one_loss)
     grads = [grad for grad, _ in gradstep]

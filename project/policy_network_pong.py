@@ -123,7 +123,8 @@ def train(sess, env, iters, batch_size, df=0.01, visualize=False):
         num_eps = 3000
         reward = 0
         action_gradients = [] #list of gradients for each action taken in round
-        for step in xrange(iters):
+        start_step = 5000000
+        for step in xrange(start_step, iters):
             if reward != 0:
                 weight = reward
                 weights = np.array([weight*max(0, 1-(len(action_gradients) - n)*df) for n in xrange(len(action_gradients))])
@@ -135,11 +136,11 @@ def train(sess, env, iters, batch_size, df=0.01, visualize=False):
                 prev_obs = np.zeros(obs.shape)
                 done = False
                 ep_start_step = step
-                if step!= 0: 
+                if step != start_step: 
                     batch_sum += reward_sum
                     print("Ep " + str(num_eps) + " Score: " + str(reward_sum))
                 if num_eps % batch_size == 0:
-                    if step != 0:
+                    if step != start_step:
                         gradients = np.sum(batch_gradients, axis=0)
                         grads_vars = [(tf.convert_to_tensor(gradient), var) for gradient, (_, var) in zip(gradients, gradstep)]
                         sess.run(opt.apply_gradients(grads_vars), feed_dict={global_step:step})
