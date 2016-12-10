@@ -114,7 +114,7 @@ def train(sess, env, iters, batch_size, df=0.01):
             prev_obs = obs
             obs, reward, done, _ = env.step(action)
             reward_sum += reward
-            if step - ep_start_step >= 10: #limit the number of steps per episode (or else it might just do the same thing over and over)
+            if step - ep_start_step >= 100: #limit the number of steps per episode (or else it might just do the same thing over and over)
                 done = True
 
 
@@ -127,8 +127,9 @@ def preprocess_frame(prev_frame, frame):
     return np.array([frame]).reshape((1, 1))
 
 def main():
-    env = gym.make('FrozenLake-v0')
-    sess = tf.Session()
+    env = gym.make('Gridworld8x8-v0')
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.05)
+    sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
     #network_input = tf.placeholder(tf.float32, shape=[80*80, 1]) 
     train(sess, env, 10000000, 100)
     

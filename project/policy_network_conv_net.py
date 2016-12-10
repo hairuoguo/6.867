@@ -108,7 +108,7 @@ def train(sess, env, iters, batch_size, df=0.01, visualize=False):
                 batch_gradients.append(ep_gradient_sum)
                 action_gradients = [] #list of gradients for each action taken in round
             if done:
-                obs = env.reset()
+                obs = env.reset() 
                 prev_obs = np.zeros(obs.shape)
                 done = False
                 ep_start_step = step

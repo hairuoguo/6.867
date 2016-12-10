@@ -63,8 +63,9 @@ def train(sess, env, iters, batch_size, df=0.01, visualize=False):
         init = tf.initialize_all_variables()
         sess.run(init)
         saver = tf.train.Saver()
+        saver.restore(sess, "my_model-3000")
         done = True
-        num_eps = 0
+        num_eps = 3000
         reward = 0
         action_gradients = [] #list of gradients for each action taken in round
         for step in xrange(iters):
@@ -164,7 +165,7 @@ def preprocess_frame(prev_frame, frame):
 
 def main():
     env = gym.make('Pong-v0')
-    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.25)
+    gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.4)
     sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
     #network_input = tf.placeholder(tf.float32, shape=[80*80, 1]) 
     train(sess, env, 1000000000, 10)
