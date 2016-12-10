@@ -6,8 +6,63 @@ import gym
 import matplotlib.pyplot as plt
 import pickle
 
-def visualize_net(layer, fname):
+def visualize(layer, fname):
     scipy.misc.imsave(fname, layer)
+
+def visualize_net(saved_model):
+    graph = tf.Graph()
+    with graph.as_default():
+        with tf.Session() as sess:
+            # Load saved graph
+            new_saver = tf.train.import_meta_graph("{}.meta".format(saved_model))
+            new_saver.restore(sess, saved_model)
+
+            # Restore weight variables from model
+            W1 = [v for v in tf.all_variables() if v.name=='W1:0']
+            W2 = [v for v in tf.all_variables() if v.name=='W2:0']
+            W1, W2 = sess.run([W1, W2])
+            W1 = np.squeeze(np.array(W1))
+            W2 = np.squeeze(np.array(W2))
+            #print W1 # shape (6400, 200)
+            #print W2 # shape(200, 2)
+            #visualize(W1, "{}_weights1.png".format(saved_model))
+            #visualize(W2, "{}_weights2.png".format(saved_model))
+
+            
+
+            # Take a slice of W1 and reshape into 80x80 to represent weights over frame
+            slice_num = 0 # set this to be whatever? not sure if it matters
+            frame = W1[:, slice_num].reshape((80, 80))
+            visualize(frame, "{0}_frame{1}.png".format(saved_model, slice_num))
+
+
+
+            # Evaluate layers on input
+            network_input = graph.get_operation_by_name('Placeholder').outputs[0]
+            hidden_units = graph.get_operation_by_name('l1').outputs[0]
+            readout = graph.get_operation_by_name('Softmax').outputs[0]
+
+            env = gym.make('Pong-v0')
+
+            test_done = False
+            test_obs = env.reset()
+            prev_test_obs = np.zeros(test_obs.shape)
+            test_reward = 0.
+            test_steps = 0
+            while test_done == False:
+                test_steps += 1
+                test_frame = preprocess_frame(prev_test_obs, test_obs)
+                test_readout = sess.run(readout, feed_dict={network_input: test_frame})
+                test_action = 2 if np.random.uniform() < test_readout.flatten()[0] else 3
+                prev_test_obs = test_obs
+                test_obs, reward, test_done, _ = env.step(test_action)
+                test_reward += reward
+                if test_steps==20:
+                    test_done = True
+
+            hidden_units = sess.run(hidden_units, feed_dict={network_input: test_frame})
+            hidden_units = np.array(hidden_units)
+            visualize(hidden_units, "{}_hidden_units.png".format(saved_model))
 
 def graph_results():
     results = pickle.load(open('results.p', 'rb'))
@@ -169,6 +224,8 @@ def main():
     sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
     #network_input = tf.placeholder(tf.float32, shape=[80*80, 1]) 
     train(sess, env, 1000000000, 10)
+
+    #visualize_net("my_model-0")  
     
 
 if __name__ == "__main__":
