@@ -1,0 +1,81 @@
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcuda.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcurand.so locally
+[2016-12-11 17:07:35,545] Site environment registry incorrect: Scoreboard did not register all envs: set(['Gridworld8x8-v0', 'Gridworld-v0'])
+[2016-12-11 17:07:35,545] Making new env: FrozenLake8x8-v0
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:924] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 0 with properties: 
+name: GeForce GTX 980 Ti
+major: 5 minor: 2 memoryClockRate (GHz) 1.228
+pciBusID 0000:01:00.0
+Total memory: 6.00GiB
+Free memory: 1.86GiB
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:126] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:806] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 980 Ti, pci bus id: 0000:01:00.0)
+Number of rounds: 100
+Average score per round: 0.0
+Number of rounds: 200
+Average score per round: 0.0
+Number of rounds: 300
+Average score per round: 0.0
+Number of rounds: 400
+Average score per round: 0.01
+Number of rounds: 500
+Average score per round: 0.0
+Number of rounds: 600
+Average score per round: 0.0
+Number of rounds: 700
+Average score per round: 0.0
+Number of rounds: 800
+Average score per round: 0.0
+Number of rounds: 900
+Average score per round: 0.0
+Number of rounds: 1000
+Average score per round: 0.01
+Number of rounds: 1100
+Average score per round: 0.0
+Number of rounds: 1200
+Average score per round: 0.01
+Number of rounds: 1300
+Average score per round: 0.01
+Number of rounds: 1400
+Average score per round: 0.0
+Number of rounds: 1500
+Average score per round: 0.01
+Number of rounds: 1600
+Average score per round: 0.01
+Number of rounds: 1700
+Average score per round: 0.0
+Number of rounds: 1800
+Average score per round: 0.0
+Number of rounds: 1900
+Average score per round: 0.0
+Number of rounds: 2000
+Average score per round: 0.0
+Number of rounds: 2100
+Average score per round: 0.0
+Number of rounds: 2200
+Average score per round: 0.0
+Number of rounds: 2300
+Average score per round: 0.0
+Number of rounds: 2400
+Average score per round: 0.0
+Traceback (most recent call last):
+  File "policy_network.py", line 140, in <module>
+    main()
+  File "policy_network.py", line 136, in main
+    train(sess, env, 10000000, 100)
+  File "policy_network.py", line 112, in train
+    action_gradient = sess.run(grads, feed_dict={one_hot:action.reshape((1)), global_step:step, network_input:frame})
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 372, in run
+    run_metadata_ptr)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 636, in _run
+    feed_dict_string, options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 708, in _do_run
+    target_list, options, run_metadata)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/python/client/session.py", line 715, in _do_call
+    return fn(*args)
+KeyboardInterrupt

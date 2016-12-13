@@ -1,0 +1,2147 @@
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcuda.so locally
+I tensorflow/stream_executor/dso_loader.cc:108] successfully opened CUDA library libcurand.so locally
+[2016-12-11 14:44:26,699] Site environment registry incorrect: Scoreboard did not register all envs: set(['Gridworld8x8-v0', 'Gridworld-v0'])
+[2016-12-11 14:44:26,700] Making new env: FrozenLake-v0
+I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:924] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:102] Found device 0 with properties: 
+name: GeForce GTX 980 Ti
+major: 5 minor: 2 memoryClockRate (GHz) 1.228
+pciBusID 0000:01:00.0
+Total memory: 6.00GiB
+Free memory: 4.52GiB
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:126] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_init.cc:136] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:806] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX 980 Ti, pci bus id: 0000:01:00.0)
+Number of rounds: 100
+Average score per round: 0.02
+Number of rounds: 200
+Average score per round: 0.02
+Number of rounds: 300
+Average score per round: 0.0
+Number of rounds: 400
+Average score per round: 0.03
+Number of rounds: 500
+Average score per round: 0.02
+Number of rounds: 600
+Average score per round: 0.04
+Number of rounds: 700
+Average score per round: 0.0
+Number of rounds: 800
+Average score per round: 0.01
+Number of rounds: 900
+Average score per round: 0.02
+Number of rounds: 1000
+Average score per round: 0.0
+Number of rounds: 1100
+Average score per round: 0.0
+Number of rounds: 1200
+Average score per round: 0.01
+Number of rounds: 1300
+Average score per round: 0.02
+Number of rounds: 1400
+Average score per round: 0.03
+Number of rounds: 1500
+Average score per round: 0.03
+Number of rounds: 1600
+Average score per round: 0.0
+Number of rounds: 1700
+Average score per round: 0.03
+Number of rounds: 1800
+Average score per round: 0.02
+Number of rounds: 1900
+Average score per round: 0.0
+Number of rounds: 2000
+Average score per round: 0.0
+Number of rounds: 2100
+Average score per round: 0.02
+Number of rounds: 2200
+Average score per round: 0.02
+Number of rounds: 2300
+Average score per round: 0.0
+Number of rounds: 2400
+Average score per round: 0.05
+Number of rounds: 2500
+Average score per round: 0.01
+Number of rounds: 2600
+Average score per round: 0.02
+Number of rounds: 2700
+Average score per round: 0.02
+Number of rounds: 2800
+Average score per round: 0.02
+Number of rounds: 2900
+Average score per round: 0.03
+Number of rounds: 3000
+Average score per round: 0.01
+Number of rounds: 3100
+Average score per round: 0.03
+Number of rounds: 3200
+Average score per round: 0.03
+Number of rounds: 3300
+Average score per round: 0.01
+Number of rounds: 3400
+Average score per round: 0.01
+Number of rounds: 3500
+Average score per round: 0.03
+Number of rounds: 3600
+Average score per round: 0.02
+Number of rounds: 3700
+Average score per round: 0.01
+Number of rounds: 3800
+Average score per round: 0.01
+Number of rounds: 3900
+Average score per round: 0.04
+Number of rounds: 4000
+Average score per round: 0.02
+Number of rounds: 4100
+Average score per round: 0.04
+Number of rounds: 4200
+Average score per round: 0.03
+Number of rounds: 4300
+Average score per round: 0.01
+Number of rounds: 4400
+Average score per round: 0.0
+Number of rounds: 4500
+Average score per round: 0.01
+Number of rounds: 4600
+Average score per round: 0.01
+Number of rounds: 4700
+Average score per round: 0.0
+Number of rounds: 4800
+Average score per round: 0.03
+Number of rounds: 4900
+Average score per round: 0.03
+Number of rounds: 5000
+Average score per round: 0.03
+Number of rounds: 5100
+Average score per round: 0.02
+Number of rounds: 5200
+Average score per round: 0.03
+Number of rounds: 5300
+Average score per round: 0.01
+Number of rounds: 5400
+Average score per round: 0.0
+Number of rounds: 5500
+Average score per round: 0.0
+Number of rounds: 5600
+Average score per round: 0.0
+Number of rounds: 5700
+Average score per round: 0.0
+Number of rounds: 5800
+Average score per round: 0.0
+Number of rounds: 5900
+Average score per round: 0.0
+Number of rounds: 6000
+Average score per round: 0.03
+Number of rounds: 6100
+Average score per round: 0.05
+Number of rounds: 6200
+Average score per round: 0.0
+Number of rounds: 6300
+Average score per round: 0.0
+Number of rounds: 6400
+Average score per round: 0.04
+Number of rounds: 6500
+Average score per round: 0.03
+Number of rounds: 6600
+Average score per round: 0.03
+Number of rounds: 6700
+Average score per round: 0.04
+Number of rounds: 6800
+Average score per round: 0.0
+Number of rounds: 6900
+Average score per round: 0.01
+Number of rounds: 7000
+Average score per round: 0.03
+Number of rounds: 7100
+Average score per round: 0.0
+Number of rounds: 7200
+Average score per round: 0.01
+Number of rounds: 7300
+Average score per round: 0.02
+Number of rounds: 7400
+Average score per round: 0.0
+Number of rounds: 7500
+Average score per round: 0.03
+Number of rounds: 7600
+Average score per round: 0.05
+Number of rounds: 7700
+Average score per round: 0.01
+Number of rounds: 7800
+Average score per round: 0.01
+Number of rounds: 7900
+Average score per round: 0.02
+Number of rounds: 8000
+Average score per round: 0.02
+Number of rounds: 8100
+Average score per round: 0.0
+Number of rounds: 8200
+Average score per round: 0.0
+Number of rounds: 8300
+Average score per round: 0.04
+Number of rounds: 8400
+Average score per round: 0.05
+Number of rounds: 8500
+Average score per round: 0.04
+Number of rounds: 8600
+Average score per round: 0.0
+Number of rounds: 8700
+Average score per round: 0.01
+Number of rounds: 8800
+Average score per round: 0.04
+Number of rounds: 8900
+Average score per round: 0.01
+Number of rounds: 9000
+Average score per round: 0.02
+Number of rounds: 9100
+Average score per round: 0.02
+Number of rounds: 9200
+Average score per round: 0.01
+Number of rounds: 9300
+Average score per round: 0.01
+Number of rounds: 9400
+Average score per round: 0.05
+Number of rounds: 9500
+Average score per round: 0.03
+Number of rounds: 9600
+Average score per round: 0.03
+Number of rounds: 9700
+Average score per round: 0.0
+Number of rounds: 9800
+Average score per round: 0.01
+Number of rounds: 9900
+Average score per round: 0.03
+Number of rounds: 10000
+Average score per round: 0.02
+Number of rounds: 10100
+Average score per round: 0.03
+Number of rounds: 10200
+Average score per round: 0.01
+Number of rounds: 10300
+Average score per round: 0.04
+Number of rounds: 10400
+Average score per round: 0.04
+Number of rounds: 10500
+Average score per round: 0.05
+Number of rounds: 10600
+Average score per round: 0.01
+Number of rounds: 10700
+Average score per round: 0.04
+Number of rounds: 10800
+Average score per round: 0.02
+Number of rounds: 10900
+Average score per round: 0.05
+Number of rounds: 11000
+Average score per round: 0.03
+Number of rounds: 11100
+Average score per round: 0.02
+Number of rounds: 11200
+Average score per round: 0.07
+Number of rounds: 11300
+Average score per round: 0.0
+Number of rounds: 11400
+Average score per round: 0.06
+Number of rounds: 11500
+Average score per round: 0.04
+Number of rounds: 11600
+Average score per round: 0.04
+Number of rounds: 11700
+Average score per round: 0.06
+Number of rounds: 11800
+Average score per round: 0.03
+Number of rounds: 11900
+Average score per round: 0.05
+Number of rounds: 12000
+Average score per round: 0.01
+Number of rounds: 12100
+Average score per round: 0.01
+Number of rounds: 12200
+Average score per round: 0.03
+Number of rounds: 12300
+Average score per round: 0.06
+Number of rounds: 12400
+Average score per round: 0.03
+Number of rounds: 12500
+Average score per round: 0.04
+Number of rounds: 12600
+Average score per round: 0.04
+Number of rounds: 12700
+Average score per round: 0.06
+Number of rounds: 12800
+Average score per round: 0.03
+Number of rounds: 12900
+Average score per round: 0.05
+Number of rounds: 13000
+Average score per round: 0.08
+Number of rounds: 13100
+Average score per round: 0.03
+Number of rounds: 13200
+Average score per round: 0.03
+Number of rounds: 13300
+Average score per round: 0.01
+Number of rounds: 13400
+Average score per round: 0.04
+Number of rounds: 13500
+Average score per round: 0.06
+Number of rounds: 13600
+Average score per round: 0.02
+Number of rounds: 13700
+Average score per round: 0.03
+Number of rounds: 13800
+Average score per round: 0.01
+Number of rounds: 13900
+Average score per round: 0.02
+Number of rounds: 14000
+Average score per round: 0.04
+Number of rounds: 14100
+Average score per round: 0.09
+Number of rounds: 14200
+Average score per round: 0.03
+Number of rounds: 14300
+Average score per round: 0.0
+Number of rounds: 14400
+Average score per round: 0.06
+Number of rounds: 14500
+Average score per round: 0.05
+Number of rounds: 14600
+Average score per round: 0.02
+Number of rounds: 14700
+Average score per round: 0.06
+Number of rounds: 14800
+Average score per round: 0.05
+Number of rounds: 14900
+Average score per round: 0.06
+Number of rounds: 15000
+Average score per round: 0.03
+Number of rounds: 15100
+Average score per round: 0.03
+Number of rounds: 15200
+Average score per round: 0.04
+Number of rounds: 15300
+Average score per round: 0.09
+Number of rounds: 15400
+Average score per round: 0.02
+Number of rounds: 15500
+Average score per round: 0.04
+Number of rounds: 15600
+Average score per round: 0.08
+Number of rounds: 15700
+Average score per round: 0.04
+Number of rounds: 15800
+Average score per round: 0.03
+Number of rounds: 15900
+Average score per round: 0.04
+Number of rounds: 16000
+Average score per round: 0.05
+Number of rounds: 16100
+Average score per round: 0.09
+Number of rounds: 16200
+Average score per round: 0.05
+Number of rounds: 16300
+Average score per round: 0.06
+Number of rounds: 16400
+Average score per round: 0.05
+Number of rounds: 16500
+Average score per round: 0.08
+Number of rounds: 16600
+Average score per round: 0.06
+Number of rounds: 16700
+Average score per round: 0.05
+Number of rounds: 16800
+Average score per round: 0.04
+Number of rounds: 16900
+Average score per round: 0.04
+Number of rounds: 17000
+Average score per round: 0.05
+Number of rounds: 17100
+Average score per round: 0.06
+Number of rounds: 17200
+Average score per round: 0.07
+Number of rounds: 17300
+Average score per round: 0.04
+Number of rounds: 17400
+Average score per round: 0.07
+Number of rounds: 17500
+Average score per round: 0.04
+Number of rounds: 17600
+Average score per round: 0.05
+Number of rounds: 17700
+Average score per round: 0.04
+Number of rounds: 17800
+Average score per round: 0.04
+Number of rounds: 17900
+Average score per round: 0.05
+Number of rounds: 18000
+Average score per round: 0.09
+Number of rounds: 18100
+Average score per round: 0.06
+Number of rounds: 18200
+Average score per round: 0.08
+Number of rounds: 18300
+Average score per round: 0.05
+Number of rounds: 18400
+Average score per round: 0.04
+Number of rounds: 18500
+Average score per round: 0.05
+Number of rounds: 18600
+Average score per round: 0.03
+Number of rounds: 18700
+Average score per round: 0.03
+Number of rounds: 18800
+Average score per round: 0.05
+Number of rounds: 18900
+Average score per round: 0.01
+Number of rounds: 19000
+Average score per round: 0.07
+Number of rounds: 19100
+Average score per round: 0.05
+Number of rounds: 19200
+Average score per round: 0.06
+Number of rounds: 19300
+Average score per round: 0.03
+Number of rounds: 19400
+Average score per round: 0.07
+Number of rounds: 19500
+Average score per round: 0.08
+Number of rounds: 19600
+Average score per round: 0.04
+Number of rounds: 19700
+Average score per round: 0.05
+Number of rounds: 19800
+Average score per round: 0.05
+Number of rounds: 19900
+Average score per round: 0.05
+Number of rounds: 20000
+Average score per round: 0.1
+Number of rounds: 20100
+Average score per round: 0.09
+Number of rounds: 20200
+Average score per round: 0.08
+Number of rounds: 20300
+Average score per round: 0.08
+Number of rounds: 20400
+Average score per round: 0.04
+Number of rounds: 20500
+Average score per round: 0.04
+Number of rounds: 20600
+Average score per round: 0.08
+Number of rounds: 20700
+Average score per round: 0.06
+Number of rounds: 20800
+Average score per round: 0.05
+Number of rounds: 20900
+Average score per round: 0.03
+Number of rounds: 21000
+Average score per round: 0.07
+Number of rounds: 21100
+Average score per round: 0.06
+Number of rounds: 21200
+Average score per round: 0.03
+Number of rounds: 21300
+Average score per round: 0.03
+Number of rounds: 21400
+Average score per round: 0.05
+Number of rounds: 21500
+Average score per round: 0.06
+Number of rounds: 21600
+Average score per round: 0.09
+Number of rounds: 21700
+Average score per round: 0.07
+Number of rounds: 21800
+Average score per round: 0.06
+Number of rounds: 21900
+Average score per round: 0.09
+Number of rounds: 22000
+Average score per round: 0.08
+Number of rounds: 22100
+Average score per round: 0.09
+Number of rounds: 22200
+Average score per round: 0.07
+Number of rounds: 22300
+Average score per round: 0.09
+Number of rounds: 22400
+Average score per round: 0.07
+Number of rounds: 22500
+Average score per round: 0.09
+Number of rounds: 22600
+Average score per round: 0.04
+Number of rounds: 22700
+Average score per round: 0.06
+Number of rounds: 22800
+Average score per round: 0.05
+Number of rounds: 22900
+Average score per round: 0.06
+Number of rounds: 23000
+Average score per round: 0.03
+Number of rounds: 23100
+Average score per round: 0.04
+Number of rounds: 23200
+Average score per round: 0.05
+Number of rounds: 23300
+Average score per round: 0.05
+Number of rounds: 23400
+Average score per round: 0.05
+Number of rounds: 23500
+Average score per round: 0.06
+Number of rounds: 23600
+Average score per round: 0.1
+Number of rounds: 23700
+Average score per round: 0.06
+Number of rounds: 23800
+Average score per round: 0.09
+Number of rounds: 23900
+Average score per round: 0.09
+Number of rounds: 24000
+Average score per round: 0.07
+Number of rounds: 24100
+Average score per round: 0.06
+Number of rounds: 24200
+Average score per round: 0.1
+Number of rounds: 24300
+Average score per round: 0.06
+Number of rounds: 24400
+Average score per round: 0.1
+Number of rounds: 24500
+Average score per round: 0.06
+Number of rounds: 24600
+Average score per round: 0.1
+Number of rounds: 24700
+Average score per round: 0.04
+Number of rounds: 24800
+Average score per round: 0.09
+Number of rounds: 24900
+Average score per round: 0.04
+Number of rounds: 25000
+Average score per round: 0.08
+Number of rounds: 25100
+Average score per round: 0.05
+Number of rounds: 25200
+Average score per round: 0.05
+Number of rounds: 25300
+Average score per round: 0.06
+Number of rounds: 25400
+Average score per round: 0.05
+Number of rounds: 25500
+Average score per round: 0.07
+Number of rounds: 25600
+Average score per round: 0.05
+Number of rounds: 25700
+Average score per round: 0.07
+Number of rounds: 25800
+Average score per round: 0.08
+Number of rounds: 25900
+Average score per round: 0.05
+Number of rounds: 26000
+Average score per round: 0.07
+Number of rounds: 26100
+Average score per round: 0.09
+Number of rounds: 26200
+Average score per round: 0.08
+Number of rounds: 26300
+Average score per round: 0.08
+Number of rounds: 26400
+Average score per round: 0.08
+Number of rounds: 26500
+Average score per round: 0.1
+Number of rounds: 26600
+Average score per round: 0.06
+Number of rounds: 26700
+Average score per round: 0.05
+Number of rounds: 26800
+Average score per round: 0.06
+Number of rounds: 26900
+Average score per round: 0.07
+Number of rounds: 27000
+Average score per round: 0.02
+Number of rounds: 27100
+Average score per round: 0.09
+Number of rounds: 27200
+Average score per round: 0.1
+Number of rounds: 27300
+Average score per round: 0.03
+Number of rounds: 27400
+Average score per round: 0.06
+Number of rounds: 27500
+Average score per round: 0.1
+Number of rounds: 27600
+Average score per round: 0.06
+Number of rounds: 27700
+Average score per round: 0.06
+Number of rounds: 27800
+Average score per round: 0.07
+Number of rounds: 27900
+Average score per round: 0.06
+Number of rounds: 28000
+Average score per round: 0.06
+Number of rounds: 28100
+Average score per round: 0.06
+Number of rounds: 28200
+Average score per round: 0.12
+Number of rounds: 28300
+Average score per round: 0.08
+Number of rounds: 28400
+Average score per round: 0.05
+Number of rounds: 28500
+Average score per round: 0.06
+Number of rounds: 28600
+Average score per round: 0.05
+Number of rounds: 28700
+Average score per round: 0.06
+Number of rounds: 28800
+Average score per round: 0.08
+Number of rounds: 28900
+Average score per round: 0.01
+Number of rounds: 29000
+Average score per round: 0.07
+Number of rounds: 29100
+Average score per round: 0.11
+Number of rounds: 29200
+Average score per round: 0.06
+Number of rounds: 29300
+Average score per round: 0.1
+Number of rounds: 29400
+Average score per round: 0.15
+Number of rounds: 29500
+Average score per round: 0.12
+Number of rounds: 29600
+Average score per round: 0.08
+Number of rounds: 29700
+Average score per round: 0.16
+Number of rounds: 29800
+Average score per round: 0.04
+Number of rounds: 29900
+Average score per round: 0.1
+Number of rounds: 30000
+Average score per round: 0.11
+Number of rounds: 30100
+Average score per round: 0.13
+Number of rounds: 30200
+Average score per round: 0.08
+Number of rounds: 30300
+Average score per round: 0.07
+Number of rounds: 30400
+Average score per round: 0.08
+Number of rounds: 30500
+Average score per round: 0.1
+Number of rounds: 30600
+Average score per round: 0.08
+Number of rounds: 30700
+Average score per round: 0.08
+Number of rounds: 30800
+Average score per round: 0.06
+Number of rounds: 30900
+Average score per round: 0.15
+Number of rounds: 31000
+Average score per round: 0.09
+Number of rounds: 31100
+Average score per round: 0.11
+Number of rounds: 31200
+Average score per round: 0.03
+Number of rounds: 31300
+Average score per round: 0.07
+Number of rounds: 31400
+Average score per round: 0.1
+Number of rounds: 31500
+Average score per round: 0.12
+Number of rounds: 31600
+Average score per round: 0.07
+Number of rounds: 31700
+Average score per round: 0.14
+Number of rounds: 31800
+Average score per round: 0.07
+Number of rounds: 31900
+Average score per round: 0.1
+Number of rounds: 32000
+Average score per round: 0.11
+Number of rounds: 32100
+Average score per round: 0.1
+Number of rounds: 32200
+Average score per round: 0.07
+Number of rounds: 32300
+Average score per round: 0.14
+Number of rounds: 32400
+Average score per round: 0.07
+Number of rounds: 32500
+Average score per round: 0.13
+Number of rounds: 32600
+Average score per round: 0.14
+Number of rounds: 32700
+Average score per round: 0.11
+Number of rounds: 32800
+Average score per round: 0.1
+Number of rounds: 32900
+Average score per round: 0.08
+Number of rounds: 33000
+Average score per round: 0.09
+Number of rounds: 33100
+Average score per round: 0.13
+Number of rounds: 33200
+Average score per round: 0.08
+Number of rounds: 33300
+Average score per round: 0.1
+Number of rounds: 33400
+Average score per round: 0.17
+Number of rounds: 33500
+Average score per round: 0.11
+Number of rounds: 33600
+Average score per round: 0.16
+Number of rounds: 33700
+Average score per round: 0.15
+Number of rounds: 33800
+Average score per round: 0.05
+Number of rounds: 33900
+Average score per round: 0.18
+Number of rounds: 34000
+Average score per round: 0.12
+Number of rounds: 34100
+Average score per round: 0.09
+Number of rounds: 34200
+Average score per round: 0.08
+Number of rounds: 34300
+Average score per round: 0.13
+Number of rounds: 34400
+Average score per round: 0.11
+Number of rounds: 34500
+Average score per round: 0.1
+Number of rounds: 34600
+Average score per round: 0.13
+Number of rounds: 34700
+Average score per round: 0.14
+Number of rounds: 34800
+Average score per round: 0.1
+Number of rounds: 34900
+Average score per round: 0.12
+Number of rounds: 35000
+Average score per round: 0.13
+Number of rounds: 35100
+Average score per round: 0.17
+Number of rounds: 35200
+Average score per round: 0.07
+Number of rounds: 35300
+Average score per round: 0.13
+Number of rounds: 35400
+Average score per round: 0.11
+Number of rounds: 35500
+Average score per round: 0.09
+Number of rounds: 35600
+Average score per round: 0.19
+Number of rounds: 35700
+Average score per round: 0.11
+Number of rounds: 35800
+Average score per round: 0.1
+Number of rounds: 35900
+Average score per round: 0.12
+Number of rounds: 36000
+Average score per round: 0.15
+Number of rounds: 36100
+Average score per round: 0.17
+Number of rounds: 36200
+Average score per round: 0.12
+Number of rounds: 36300
+Average score per round: 0.08
+Number of rounds: 36400
+Average score per round: 0.11
+Number of rounds: 36500
+Average score per round: 0.16
+Number of rounds: 36600
+Average score per round: 0.11
+Number of rounds: 36700
+Average score per round: 0.08
+Number of rounds: 36800
+Average score per round: 0.1
+Number of rounds: 36900
+Average score per round: 0.1
+Number of rounds: 37000
+Average score per round: 0.1
+Number of rounds: 37100
+Average score per round: 0.12
+Number of rounds: 37200
+Average score per round: 0.15
+Number of rounds: 37300
+Average score per round: 0.11
+Number of rounds: 37400
+Average score per round: 0.11
+Number of rounds: 37500
+Average score per round: 0.16
+Number of rounds: 37600
+Average score per round: 0.19
+Number of rounds: 37700
+Average score per round: 0.22
+Number of rounds: 37800
+Average score per round: 0.11
+Number of rounds: 37900
+Average score per round: 0.15
+Number of rounds: 38000
+Average score per round: 0.13
+Number of rounds: 38100
+Average score per round: 0.13
+Number of rounds: 38200
+Average score per round: 0.17
+Number of rounds: 38300
+Average score per round: 0.12
+Number of rounds: 38400
+Average score per round: 0.14
+Number of rounds: 38500
+Average score per round: 0.19
+Number of rounds: 38600
+Average score per round: 0.11
+Number of rounds: 38700
+Average score per round: 0.17
+Number of rounds: 38800
+Average score per round: 0.2
+Number of rounds: 38900
+Average score per round: 0.15
+Number of rounds: 39000
+Average score per round: 0.12
+Number of rounds: 39100
+Average score per round: 0.19
+Number of rounds: 39200
+Average score per round: 0.22
+Number of rounds: 39300
+Average score per round: 0.12
+Number of rounds: 39400
+Average score per round: 0.17
+Number of rounds: 39500
+Average score per round: 0.19
+Number of rounds: 39600
+Average score per round: 0.25
+Number of rounds: 39700
+Average score per round: 0.17
+Number of rounds: 39800
+Average score per round: 0.16
+Number of rounds: 39900
+Average score per round: 0.2
+Number of rounds: 40000
+Average score per round: 0.21
+Number of rounds: 40100
+Average score per round: 0.09
+Number of rounds: 40200
+Average score per round: 0.2
+Number of rounds: 40300
+Average score per round: 0.23
+Number of rounds: 40400
+Average score per round: 0.25
+Number of rounds: 40500
+Average score per round: 0.24
+Number of rounds: 40600
+Average score per round: 0.13
+Number of rounds: 40700
+Average score per round: 0.19
+Number of rounds: 40800
+Average score per round: 0.24
+Number of rounds: 40900
+Average score per round: 0.15
+Number of rounds: 41000
+Average score per round: 0.15
+Number of rounds: 41100
+Average score per round: 0.23
+Number of rounds: 41200
+Average score per round: 0.19
+Number of rounds: 41300
+Average score per round: 0.19
+Number of rounds: 41400
+Average score per round: 0.24
+Number of rounds: 41500
+Average score per round: 0.25
+Number of rounds: 41600
+Average score per round: 0.22
+Number of rounds: 41700
+Average score per round: 0.24
+Number of rounds: 41800
+Average score per round: 0.2
+Number of rounds: 41900
+Average score per round: 0.23
+Number of rounds: 42000
+Average score per round: 0.21
+Number of rounds: 42100
+Average score per round: 0.26
+Number of rounds: 42200
+Average score per round: 0.21
+Number of rounds: 42300
+Average score per round: 0.2
+Number of rounds: 42400
+Average score per round: 0.19
+Number of rounds: 42500
+Average score per round: 0.25
+Number of rounds: 42600
+Average score per round: 0.24
+Number of rounds: 42700
+Average score per round: 0.24
+Number of rounds: 42800
+Average score per round: 0.22
+Number of rounds: 42900
+Average score per round: 0.21
+Number of rounds: 43000
+Average score per round: 0.21
+Number of rounds: 43100
+Average score per round: 0.23
+Number of rounds: 43200
+Average score per round: 0.27
+Number of rounds: 43300
+Average score per round: 0.2
+Number of rounds: 43400
+Average score per round: 0.25
+Number of rounds: 43500
+Average score per round: 0.17
+Number of rounds: 43600
+Average score per round: 0.35
+Number of rounds: 43700
+Average score per round: 0.25
+Number of rounds: 43800
+Average score per round: 0.24
+Number of rounds: 43900
+Average score per round: 0.17
+Number of rounds: 44000
+Average score per round: 0.24
+Number of rounds: 44100
+Average score per round: 0.25
+Number of rounds: 44200
+Average score per round: 0.35
+Number of rounds: 44300
+Average score per round: 0.28
+Number of rounds: 44400
+Average score per round: 0.22
+Number of rounds: 44500
+Average score per round: 0.22
+Number of rounds: 44600
+Average score per round: 0.22
+Number of rounds: 44700
+Average score per round: 0.23
+Number of rounds: 44800
+Average score per round: 0.26
+Number of rounds: 44900
+Average score per round: 0.34
+Number of rounds: 45000
+Average score per round: 0.33
+Number of rounds: 45100
+Average score per round: 0.25
+Number of rounds: 45200
+Average score per round: 0.26
+Number of rounds: 45300
+Average score per round: 0.19
+Number of rounds: 45400
+Average score per round: 0.24
+Number of rounds: 45500
+Average score per round: 0.29
+Number of rounds: 45600
+Average score per round: 0.26
+Number of rounds: 45700
+Average score per round: 0.24
+Number of rounds: 45800
+Average score per round: 0.26
+Number of rounds: 45900
+Average score per round: 0.22
+Number of rounds: 46000
+Average score per round: 0.26
+Number of rounds: 46100
+Average score per round: 0.26
+Number of rounds: 46200
+Average score per round: 0.26
+Number of rounds: 46300
+Average score per round: 0.31
+Number of rounds: 46400
+Average score per round: 0.23
+Number of rounds: 46500
+Average score per round: 0.23
+Number of rounds: 46600
+Average score per round: 0.32
+Number of rounds: 46700
+Average score per round: 0.27
+Number of rounds: 46800
+Average score per round: 0.31
+Number of rounds: 46900
+Average score per round: 0.33
+Number of rounds: 47000
+Average score per round: 0.29
+Number of rounds: 47100
+Average score per round: 0.28
+Number of rounds: 47200
+Average score per round: 0.26
+Number of rounds: 47300
+Average score per round: 0.29
+Number of rounds: 47400
+Average score per round: 0.25
+Number of rounds: 47500
+Average score per round: 0.26
+Number of rounds: 47600
+Average score per round: 0.32
+Number of rounds: 47700
+Average score per round: 0.26
+Number of rounds: 47800
+Average score per round: 0.2
+Number of rounds: 47900
+Average score per round: 0.36
+Number of rounds: 48000
+Average score per round: 0.32
+Number of rounds: 48100
+Average score per round: 0.31
+Number of rounds: 48200
+Average score per round: 0.25
+Number of rounds: 48300
+Average score per round: 0.26
+Number of rounds: 48400
+Average score per round: 0.32
+Number of rounds: 48500
+Average score per round: 0.25
+Number of rounds: 48600
+Average score per round: 0.34
+Number of rounds: 48700
+Average score per round: 0.29
+Number of rounds: 48800
+Average score per round: 0.3
+Number of rounds: 48900
+Average score per round: 0.31
+Number of rounds: 49000
+Average score per round: 0.27
+Number of rounds: 49100
+Average score per round: 0.3
+Number of rounds: 49200
+Average score per round: 0.31
+Number of rounds: 49300
+Average score per round: 0.35
+Number of rounds: 49400
+Average score per round: 0.29
+Number of rounds: 49500
+Average score per round: 0.43
+Number of rounds: 49600
+Average score per round: 0.24
+Number of rounds: 49700
+Average score per round: 0.25
+Number of rounds: 49800
+Average score per round: 0.36
+Number of rounds: 49900
+Average score per round: 0.31
+Number of rounds: 50000
+Average score per round: 0.32
+Number of rounds: 50100
+Average score per round: 0.31
+Number of rounds: 50200
+Average score per round: 0.35
+Number of rounds: 50300
+Average score per round: 0.22
+Number of rounds: 50400
+Average score per round: 0.38
+Number of rounds: 50500
+Average score per round: 0.35
+Number of rounds: 50600
+Average score per round: 0.32
+Number of rounds: 50700
+Average score per round: 0.33
+Number of rounds: 50800
+Average score per round: 0.33
+Number of rounds: 50900
+Average score per round: 0.32
+Number of rounds: 51000
+Average score per round: 0.34
+Number of rounds: 51100
+Average score per round: 0.35
+Number of rounds: 51200
+Average score per round: 0.33
+Number of rounds: 51300
+Average score per round: 0.34
+Number of rounds: 51400
+Average score per round: 0.34
+Number of rounds: 51500
+Average score per round: 0.28
+Number of rounds: 51600
+Average score per round: 0.34
+Number of rounds: 51700
+Average score per round: 0.35
+Number of rounds: 51800
+Average score per round: 0.4
+Number of rounds: 51900
+Average score per round: 0.3
+Number of rounds: 52000
+Average score per round: 0.34
+Number of rounds: 52100
+Average score per round: 0.42
+Number of rounds: 52200
+Average score per round: 0.35
+Number of rounds: 52300
+Average score per round: 0.33
+Number of rounds: 52400
+Average score per round: 0.24
+Number of rounds: 52500
+Average score per round: 0.31
+Number of rounds: 52600
+Average score per round: 0.31
+Number of rounds: 52700
+Average score per round: 0.43
+Number of rounds: 52800
+Average score per round: 0.21
+Number of rounds: 52900
+Average score per round: 0.37
+Number of rounds: 53000
+Average score per round: 0.31
+Number of rounds: 53100
+Average score per round: 0.29
+Number of rounds: 53200
+Average score per round: 0.3
+Number of rounds: 53300
+Average score per round: 0.34
+Number of rounds: 53400
+Average score per round: 0.33
+Number of rounds: 53500
+Average score per round: 0.23
+Number of rounds: 53600
+Average score per round: 0.21
+Number of rounds: 53700
+Average score per round: 0.35
+Number of rounds: 53800
+Average score per round: 0.31
+Number of rounds: 53900
+Average score per round: 0.32
+Number of rounds: 54000
+Average score per round: 0.32
+Number of rounds: 54100
+Average score per round: 0.32
+Number of rounds: 54200
+Average score per round: 0.31
+Number of rounds: 54300
+Average score per round: 0.31
+Number of rounds: 54400
+Average score per round: 0.35
+Number of rounds: 54500
+Average score per round: 0.36
+Number of rounds: 54600
+Average score per round: 0.3
+Number of rounds: 54700
+Average score per round: 0.29
+Number of rounds: 54800
+Average score per round: 0.39
+Number of rounds: 54900
+Average score per round: 0.32
+Number of rounds: 55000
+Average score per round: 0.35
+Number of rounds: 55100
+Average score per round: 0.33
+Number of rounds: 55200
+Average score per round: 0.24
+Number of rounds: 55300
+Average score per round: 0.26
+Number of rounds: 55400
+Average score per round: 0.32
+Number of rounds: 55500
+Average score per round: 0.27
+Number of rounds: 55600
+Average score per round: 0.33
+Number of rounds: 55700
+Average score per round: 0.29
+Number of rounds: 55800
+Average score per round: 0.27
+Number of rounds: 55900
+Average score per round: 0.31
+Number of rounds: 56000
+Average score per round: 0.31
+Number of rounds: 56100
+Average score per round: 0.35
+Number of rounds: 56200
+Average score per round: 0.35
+Number of rounds: 56300
+Average score per round: 0.28
+Number of rounds: 56400
+Average score per round: 0.34
+Number of rounds: 56500
+Average score per round: 0.4
+Number of rounds: 56600
+Average score per round: 0.34
+Number of rounds: 56700
+Average score per round: 0.43
+Number of rounds: 56800
+Average score per round: 0.37
+Number of rounds: 56900
+Average score per round: 0.29
+Number of rounds: 57000
+Average score per round: 0.36
+Number of rounds: 57100
+Average score per round: 0.22
+Number of rounds: 57200
+Average score per round: 0.33
+Number of rounds: 57300
+Average score per round: 0.32
+Number of rounds: 57400
+Average score per round: 0.31
+Number of rounds: 57500
+Average score per round: 0.33
+Number of rounds: 57600
+Average score per round: 0.38
+Number of rounds: 57700
+Average score per round: 0.28
+Number of rounds: 57800
+Average score per round: 0.35
+Number of rounds: 57900
+Average score per round: 0.32
+Number of rounds: 58000
+Average score per round: 0.36
+Number of rounds: 58100
+Average score per round: 0.36
+Number of rounds: 58200
+Average score per round: 0.32
+Number of rounds: 58300
+Average score per round: 0.33
+Number of rounds: 58400
+Average score per round: 0.31
+Number of rounds: 58500
+Average score per round: 0.39
+Number of rounds: 58600
+Average score per round: 0.32
+Number of rounds: 58700
+Average score per round: 0.33
+Number of rounds: 58800
+Average score per round: 0.36
+Number of rounds: 58900
+Average score per round: 0.34
+Number of rounds: 59000
+Average score per round: 0.27
+Number of rounds: 59100
+Average score per round: 0.38
+Number of rounds: 59200
+Average score per round: 0.26
+Number of rounds: 59300
+Average score per round: 0.32
+Number of rounds: 59400
+Average score per round: 0.23
+Number of rounds: 59500
+Average score per round: 0.35
+Number of rounds: 59600
+Average score per round: 0.25
+Number of rounds: 59700
+Average score per round: 0.31
+Number of rounds: 59800
+Average score per round: 0.38
+Number of rounds: 59900
+Average score per round: 0.33
+Number of rounds: 60000
+Average score per round: 0.34
+Number of rounds: 60100
+Average score per round: 0.27
+Number of rounds: 60200
+Average score per round: 0.34
+Number of rounds: 60300
+Average score per round: 0.27
+Number of rounds: 60400
+Average score per round: 0.37
+Number of rounds: 60500
+Average score per round: 0.34
+Number of rounds: 60600
+Average score per round: 0.33
+Number of rounds: 60700
+Average score per round: 0.33
+Number of rounds: 60800
+Average score per round: 0.34
+Number of rounds: 60900
+Average score per round: 0.34
+Number of rounds: 61000
+Average score per round: 0.38
+Number of rounds: 61100
+Average score per round: 0.32
+Number of rounds: 61200
+Average score per round: 0.31
+Number of rounds: 61300
+Average score per round: 0.36
+Number of rounds: 61400
+Average score per round: 0.31
+Number of rounds: 61500
+Average score per round: 0.32
+Number of rounds: 61600
+Average score per round: 0.34
+Number of rounds: 61700
+Average score per round: 0.22
+Number of rounds: 61800
+Average score per round: 0.43
+Number of rounds: 61900
+Average score per round: 0.38
+Number of rounds: 62000
+Average score per round: 0.41
+Number of rounds: 62100
+Average score per round: 0.34
+Number of rounds: 62200
+Average score per round: 0.43
+Number of rounds: 62300
+Average score per round: 0.31
+Number of rounds: 62400
+Average score per round: 0.32
+Number of rounds: 62500
+Average score per round: 0.36
+Number of rounds: 62600
+Average score per round: 0.3
+Number of rounds: 62700
+Average score per round: 0.36
+Number of rounds: 62800
+Average score per round: 0.34
+Number of rounds: 62900
+Average score per round: 0.35
+Number of rounds: 63000
+Average score per round: 0.41
+Number of rounds: 63100
+Average score per round: 0.41
+Number of rounds: 63200
+Average score per round: 0.33
+Number of rounds: 63300
+Average score per round: 0.33
+Number of rounds: 63400
+Average score per round: 0.26
+Number of rounds: 63500
+Average score per round: 0.27
+Number of rounds: 63600
+Average score per round: 0.31
+Number of rounds: 63700
+Average score per round: 0.37
+Number of rounds: 63800
+Average score per round: 0.34
+Number of rounds: 63900
+Average score per round: 0.31
+Number of rounds: 64000
+Average score per round: 0.31
+Number of rounds: 64100
+Average score per round: 0.29
+Number of rounds: 64200
+Average score per round: 0.28
+Number of rounds: 64300
+Average score per round: 0.41
+Number of rounds: 64400
+Average score per round: 0.31
+Number of rounds: 64500
+Average score per round: 0.32
+Number of rounds: 64600
+Average score per round: 0.26
+Number of rounds: 64700
+Average score per round: 0.37
+Number of rounds: 64800
+Average score per round: 0.33
+Number of rounds: 64900
+Average score per round: 0.32
+Number of rounds: 65000
+Average score per round: 0.32
+Number of rounds: 65100
+Average score per round: 0.33
+Number of rounds: 65200
+Average score per round: 0.36
+Number of rounds: 65300
+Average score per round: 0.32
+Number of rounds: 65400
+Average score per round: 0.29
+Number of rounds: 65500
+Average score per round: 0.29
+Number of rounds: 65600
+Average score per round: 0.37
+Number of rounds: 65700
+Average score per round: 0.34
+Number of rounds: 65800
+Average score per round: 0.32
+Number of rounds: 65900
+Average score per round: 0.3
+Number of rounds: 66000
+Average score per round: 0.26
+Number of rounds: 66100
+Average score per round: 0.36
+Number of rounds: 66200
+Average score per round: 0.27
+Number of rounds: 66300
+Average score per round: 0.39
+Number of rounds: 66400
+Average score per round: 0.39
+Number of rounds: 66500
+Average score per round: 0.38
+Number of rounds: 66600
+Average score per round: 0.3
+Number of rounds: 66700
+Average score per round: 0.34
+Number of rounds: 66800
+Average score per round: 0.4
+Number of rounds: 66900
+Average score per round: 0.33
+Number of rounds: 67000
+Average score per round: 0.39
+Number of rounds: 67100
+Average score per round: 0.27
+Number of rounds: 67200
+Average score per round: 0.32
+Number of rounds: 67300
+Average score per round: 0.35
+Number of rounds: 67400
+Average score per round: 0.31
+Number of rounds: 67500
+Average score per round: 0.31
+Number of rounds: 67600
+Average score per round: 0.33
+Number of rounds: 67700
+Average score per round: 0.31
+Number of rounds: 67800
+Average score per round: 0.34
+Number of rounds: 67900
+Average score per round: 0.34
+Number of rounds: 68000
+Average score per round: 0.31
+Number of rounds: 68100
+Average score per round: 0.38
+Number of rounds: 68200
+Average score per round: 0.38
+Number of rounds: 68300
+Average score per round: 0.36
+Number of rounds: 68400
+Average score per round: 0.38
+Number of rounds: 68500
+Average score per round: 0.36
+Number of rounds: 68600
+Average score per round: 0.33
+Number of rounds: 68700
+Average score per round: 0.26
+Number of rounds: 68800
+Average score per round: 0.37
+Number of rounds: 68900
+Average score per round: 0.36
+Number of rounds: 69000
+Average score per round: 0.37
+Number of rounds: 69100
+Average score per round: 0.34
+Number of rounds: 69200
+Average score per round: 0.31
+Number of rounds: 69300
+Average score per round: 0.34
+Number of rounds: 69400
+Average score per round: 0.29
+Number of rounds: 69500
+Average score per round: 0.37
+Number of rounds: 69600
+Average score per round: 0.31
+Number of rounds: 69700
+Average score per round: 0.42
+Number of rounds: 69800
+Average score per round: 0.31
+Number of rounds: 69900
+Average score per round: 0.33
+Number of rounds: 70000
+Average score per round: 0.32
+Number of rounds: 70100
+Average score per round: 0.33
+Number of rounds: 70200
+Average score per round: 0.44
+Number of rounds: 70300
+Average score per round: 0.35
+Number of rounds: 70400
+Average score per round: 0.4
+Number of rounds: 70500
+Average score per round: 0.41
+Number of rounds: 70600
+Average score per round: 0.28
+Number of rounds: 70700
+Average score per round: 0.38
+Number of rounds: 70800
+Average score per round: 0.31
+Number of rounds: 70900
+Average score per round: 0.3
+Number of rounds: 71000
+Average score per round: 0.41
+Number of rounds: 71100
+Average score per round: 0.3
+Number of rounds: 71200
+Average score per round: 0.37
+Number of rounds: 71300
+Average score per round: 0.24
+Number of rounds: 71400
+Average score per round: 0.34
+Number of rounds: 71500
+Average score per round: 0.29
+Number of rounds: 71600
+Average score per round: 0.44
+Number of rounds: 71700
+Average score per round: 0.31
+Number of rounds: 71800
+Average score per round: 0.36
+Number of rounds: 71900
+Average score per round: 0.31
+Number of rounds: 72000
+Average score per round: 0.39
+Number of rounds: 72100
+Average score per round: 0.29
+Number of rounds: 72200
+Average score per round: 0.37
+Number of rounds: 72300
+Average score per round: 0.25
+Number of rounds: 72400
+Average score per round: 0.36
+Number of rounds: 72500
+Average score per round: 0.32
+Number of rounds: 72600
+Average score per round: 0.3
+Number of rounds: 72700
+Average score per round: 0.34
+Number of rounds: 72800
+Average score per round: 0.37
+Number of rounds: 72900
+Average score per round: 0.28
+Number of rounds: 73000
+Average score per round: 0.28
+Number of rounds: 73100
+Average score per round: 0.45
+Number of rounds: 73200
+Average score per round: 0.37
+Number of rounds: 73300
+Average score per round: 0.29
+Number of rounds: 73400
+Average score per round: 0.41
+Number of rounds: 73500
+Average score per round: 0.43
+Number of rounds: 73600
+Average score per round: 0.34
+Number of rounds: 73700
+Average score per round: 0.37
+Number of rounds: 73800
+Average score per round: 0.22
+Number of rounds: 73900
+Average score per round: 0.33
+Number of rounds: 74000
+Average score per round: 0.3
+Number of rounds: 74100
+Average score per round: 0.35
+Number of rounds: 74200
+Average score per round: 0.4
+Number of rounds: 74300
+Average score per round: 0.39
+Number of rounds: 74400
+Average score per round: 0.32
+Number of rounds: 74500
+Average score per round: 0.41
+Number of rounds: 74600
+Average score per round: 0.39
+Number of rounds: 74700
+Average score per round: 0.36
+Number of rounds: 74800
+Average score per round: 0.43
+Number of rounds: 74900
+Average score per round: 0.38
+Number of rounds: 75000
+Average score per round: 0.29
+Number of rounds: 75100
+Average score per round: 0.27
+Number of rounds: 75200
+Average score per round: 0.29
+Number of rounds: 75300
+Average score per round: 0.35
+Number of rounds: 75400
+Average score per round: 0.35
+Number of rounds: 75500
+Average score per round: 0.29
+Number of rounds: 75600
+Average score per round: 0.25
+Number of rounds: 75700
+Average score per round: 0.33
+Number of rounds: 75800
+Average score per round: 0.34
+Number of rounds: 75900
+Average score per round: 0.34
+Number of rounds: 76000
+Average score per round: 0.33
+Number of rounds: 76100
+Average score per round: 0.41
+Number of rounds: 76200
+Average score per round: 0.42
+Number of rounds: 76300
+Average score per round: 0.3
+Number of rounds: 76400
+Average score per round: 0.36
+Number of rounds: 76500
+Average score per round: 0.39
+Number of rounds: 76600
+Average score per round: 0.38
+Number of rounds: 76700
+Average score per round: 0.36
+Number of rounds: 76800
+Average score per round: 0.35
+Number of rounds: 76900
+Average score per round: 0.28
+Number of rounds: 77000
+Average score per round: 0.35
+Number of rounds: 77100
+Average score per round: 0.32
+Number of rounds: 77200
+Average score per round: 0.36
+Number of rounds: 77300
+Average score per round: 0.33
+Number of rounds: 77400
+Average score per round: 0.34
+Number of rounds: 77500
+Average score per round: 0.26
+Number of rounds: 77600
+Average score per round: 0.26
+Number of rounds: 77700
+Average score per round: 0.28
+Number of rounds: 77800
+Average score per round: 0.35
+Number of rounds: 77900
+Average score per round: 0.31
+Number of rounds: 78000
+Average score per round: 0.35
+Number of rounds: 78100
+Average score per round: 0.35
+Number of rounds: 78200
+Average score per round: 0.33
+Number of rounds: 78300
+Average score per round: 0.37
+Number of rounds: 78400
+Average score per round: 0.31
+Number of rounds: 78500
+Average score per round: 0.24
+Number of rounds: 78600
+Average score per round: 0.34
+Number of rounds: 78700
+Average score per round: 0.36
+Number of rounds: 78800
+Average score per round: 0.32
+Number of rounds: 78900
+Average score per round: 0.27
+Number of rounds: 79000
+Average score per round: 0.28
+Number of rounds: 79100
+Average score per round: 0.42
+Number of rounds: 79200
+Average score per round: 0.34
+Number of rounds: 79300
+Average score per round: 0.37
+Number of rounds: 79400
+Average score per round: 0.39
+Number of rounds: 79500
+Average score per round: 0.35
+Number of rounds: 79600
+Average score per round: 0.38
+Number of rounds: 79700
+Average score per round: 0.27
+Number of rounds: 79800
+Average score per round: 0.34
+Number of rounds: 79900
+Average score per round: 0.32
+Number of rounds: 80000
+Average score per round: 0.34
+Number of rounds: 80100
+Average score per round: 0.43
+Number of rounds: 80200
+Average score per round: 0.35
+Number of rounds: 80300
+Average score per round: 0.37
+Number of rounds: 80400
+Average score per round: 0.29
+Number of rounds: 80500
+Average score per round: 0.37
+Number of rounds: 80600
+Average score per round: 0.37
+Number of rounds: 80700
+Average score per round: 0.29
+Number of rounds: 80800
+Average score per round: 0.3
+Number of rounds: 80900
+Average score per round: 0.31
+Number of rounds: 81000
+Average score per round: 0.33
+Number of rounds: 81100
+Average score per round: 0.28
+Number of rounds: 81200
+Average score per round: 0.4
+Number of rounds: 81300
+Average score per round: 0.28
+Number of rounds: 81400
+Average score per round: 0.33
+Number of rounds: 81500
+Average score per round: 0.38
+Number of rounds: 81600
+Average score per round: 0.28
+Number of rounds: 81700
+Average score per round: 0.29
+Number of rounds: 81800
+Average score per round: 0.3
+Number of rounds: 81900
+Average score per round: 0.36
+Number of rounds: 82000
+Average score per round: 0.3
+Number of rounds: 82100
+Average score per round: 0.21
+Number of rounds: 82200
+Average score per round: 0.38
+Number of rounds: 82300
+Average score per round: 0.28
+Number of rounds: 82400
+Average score per round: 0.39
+Number of rounds: 82500
+Average score per round: 0.3
+Number of rounds: 82600
+Average score per round: 0.36
+Number of rounds: 82700
+Average score per round: 0.36
+Number of rounds: 82800
+Average score per round: 0.34
+Number of rounds: 82900
+Average score per round: 0.37
+Number of rounds: 83000
+Average score per round: 0.36
+Number of rounds: 83100
+Average score per round: 0.38
+Number of rounds: 83200
+Average score per round: 0.39
+Number of rounds: 83300
+Average score per round: 0.35
+Number of rounds: 83400
+Average score per round: 0.32
+Number of rounds: 83500
+Average score per round: 0.34
+Number of rounds: 83600
+Average score per round: 0.36
+Number of rounds: 83700
+Average score per round: 0.33
+Number of rounds: 83800
+Average score per round: 0.38
+Number of rounds: 83900
+Average score per round: 0.34
+Number of rounds: 84000
+Average score per round: 0.44
+Number of rounds: 84100
+Average score per round: 0.32
+Number of rounds: 84200
+Average score per round: 0.32
+Number of rounds: 84300
+Average score per round: 0.35
+Number of rounds: 84400
+Average score per round: 0.32
+Number of rounds: 84500
+Average score per round: 0.47
+Number of rounds: 84600
+Average score per round: 0.3
+Number of rounds: 84700
+Average score per round: 0.33
+Number of rounds: 84800
+Average score per round: 0.33
+Number of rounds: 84900
+Average score per round: 0.25
+Number of rounds: 85000
+Average score per round: 0.25
+Number of rounds: 85100
+Average score per round: 0.33
+Number of rounds: 85200
+Average score per round: 0.3
+Number of rounds: 85300
+Average score per round: 0.38
+Number of rounds: 85400
+Average score per round: 0.34
+Number of rounds: 85500
+Average score per round: 0.35
+Number of rounds: 85600
+Average score per round: 0.32
+Number of rounds: 85700
+Average score per round: 0.35
+Number of rounds: 85800
+Average score per round: 0.43
+Number of rounds: 85900
+Average score per round: 0.38
+Number of rounds: 86000
+Average score per round: 0.39
+Number of rounds: 86100
+Average score per round: 0.35
+Number of rounds: 86200
+Average score per round: 0.31
+Number of rounds: 86300
+Average score per round: 0.35
+Number of rounds: 86400
+Average score per round: 0.37
+Number of rounds: 86500
+Average score per round: 0.39
+Number of rounds: 86600
+Average score per round: 0.33
+Number of rounds: 86700
+Average score per round: 0.42
+Number of rounds: 86800
+Average score per round: 0.36
+Number of rounds: 86900
+Average score per round: 0.28
+Number of rounds: 87000
+Average score per round: 0.22
+Number of rounds: 87100
+Average score per round: 0.34
+Number of rounds: 87200
+Average score per round: 0.39
+Number of rounds: 87300
+Average score per round: 0.33
+Number of rounds: 87400
+Average score per round: 0.38
+Number of rounds: 87500
+Average score per round: 0.31
+Number of rounds: 87600
+Average score per round: 0.31
+Number of rounds: 87700
+Average score per round: 0.29
+Number of rounds: 87800
+Average score per round: 0.27
+Number of rounds: 87900
+Average score per round: 0.39
+Number of rounds: 88000
+Average score per round: 0.35
+Number of rounds: 88100
+Average score per round: 0.32
+Number of rounds: 88200
+Average score per round: 0.26
+Number of rounds: 88300
+Average score per round: 0.29
+Number of rounds: 88400
+Average score per round: 0.32
+Number of rounds: 88500
+Average score per round: 0.28
+Number of rounds: 88600
+Average score per round: 0.35
+Number of rounds: 88700
+Average score per round: 0.32
+Number of rounds: 88800
+Average score per round: 0.32
+Number of rounds: 88900
+Average score per round: 0.4
+Number of rounds: 89000
+Average score per round: 0.35
+Number of rounds: 89100
+Average score per round: 0.3
+Number of rounds: 89200
+Average score per round: 0.41
+Number of rounds: 89300
+Average score per round: 0.33
+Number of rounds: 89400
+Average score per round: 0.34
+Number of rounds: 89500
+Average score per round: 0.35
+Number of rounds: 89600
+Average score per round: 0.3
+Number of rounds: 89700
+Average score per round: 0.3
+Number of rounds: 89800
+Average score per round: 0.36
+Number of rounds: 89900
+Average score per round: 0.31
+Number of rounds: 90000
+Average score per round: 0.39
+Number of rounds: 90100
+Average score per round: 0.35
+Number of rounds: 90200
+Average score per round: 0.33
+Number of rounds: 90300
+Average score per round: 0.37
+Number of rounds: 90400
+Average score per round: 0.32
+Number of rounds: 90500
+Average score per round: 0.3
+Number of rounds: 90600
+Average score per round: 0.37
+Number of rounds: 90700
+Average score per round: 0.35
+Number of rounds: 90800
+Average score per round: 0.36
+Number of rounds: 90900
+Average score per round: 0.37
+Number of rounds: 91000
+Average score per round: 0.3
+Number of rounds: 91100
+Average score per round: 0.3
+Number of rounds: 91200
+Average score per round: 0.4
+Number of rounds: 91300
+Average score per round: 0.4
+Number of rounds: 91400
+Average score per round: 0.28
+Number of rounds: 91500
+Average score per round: 0.39
+Number of rounds: 91600
+Average score per round: 0.33
+Number of rounds: 91700
+Average score per round: 0.33
+Number of rounds: 91800
+Average score per round: 0.37
+Number of rounds: 91900
+Average score per round: 0.34
+Number of rounds: 92000
+Average score per round: 0.39
+Number of rounds: 92100
+Average score per round: 0.29
+Number of rounds: 92200
+Average score per round: 0.41
+Number of rounds: 92300
+Average score per round: 0.33
+Number of rounds: 92400
+Average score per round: 0.3
+Number of rounds: 92500
+Average score per round: 0.3
+Number of rounds: 92600
+Average score per round: 0.33
+Number of rounds: 92700
+Average score per round: 0.28
+Number of rounds: 92800
+Average score per round: 0.35
+Number of rounds: 92900
+Average score per round: 0.38
+Number of rounds: 93000
+Average score per round: 0.29
+Number of rounds: 93100
+Average score per round: 0.41
+Number of rounds: 93200
+Average score per round: 0.37
+Number of rounds: 93300
+Average score per round: 0.37
+Number of rounds: 93400
+Average score per round: 0.3
+Number of rounds: 93500
+Average score per round: 0.39
+Number of rounds: 93600
+Average score per round: 0.26
+Number of rounds: 93700
+Average score per round: 0.38
+Number of rounds: 93800
+Average score per round: 0.31
+Number of rounds: 93900
+Average score per round: 0.36
+Number of rounds: 94000
+Average score per round: 0.34
+Number of rounds: 94100
+Average score per round: 0.33
+Number of rounds: 94200
+Average score per round: 0.38
+Number of rounds: 94300
+Average score per round: 0.36
+Number of rounds: 94400
+Average score per round: 0.33
+Number of rounds: 94500
+Average score per round: 0.38
+Number of rounds: 94600
+Average score per round: 0.35
+Number of rounds: 94700
+Average score per round: 0.29
+Number of rounds: 94800
+Average score per round: 0.34
+Number of rounds: 94900
+Average score per round: 0.3
+Number of rounds: 95000
+Average score per round: 0.34
+Number of rounds: 95100
+Average score per round: 0.33
+Number of rounds: 95200
+Average score per round: 0.33
+Number of rounds: 95300
+Average score per round: 0.28
+Number of rounds: 95400
+Average score per round: 0.26
+Number of rounds: 95500
+Average score per round: 0.34
+Number of rounds: 95600
+Average score per round: 0.38
+Number of rounds: 95700
+Average score per round: 0.27
+Number of rounds: 95800
+Average score per round: 0.33
+Number of rounds: 95900
+Average score per round: 0.32
+Number of rounds: 96000
+Average score per round: 0.33
+Number of rounds: 96100
+Average score per round: 0.34
+Number of rounds: 96200
+Average score per round: 0.33
+Number of rounds: 96300
+Average score per round: 0.32
+Number of rounds: 96400
+Average score per round: 0.34
+Number of rounds: 96500
+Average score per round: 0.36
+Number of rounds: 96600
+Average score per round: 0.29
+Number of rounds: 96700
+Average score per round: 0.38
+Number of rounds: 96800
+Average score per round: 0.39
+Number of rounds: 96900
+Average score per round: 0.39
+Number of rounds: 97000
+Average score per round: 0.34
+Number of rounds: 97100
+Average score per round: 0.39
+Number of rounds: 97200
+Average score per round: 0.4
+Number of rounds: 97300
+Average score per round: 0.41
+Number of rounds: 97400
+Average score per round: 0.34
+Number of rounds: 97500
+Average score per round: 0.36
+Number of rounds: 97600
+Average score per round: 0.32
+Number of rounds: 97700
+Average score per round: 0.25
+Number of rounds: 97800
+Average score per round: 0.32
+Number of rounds: 97900
+Average score per round: 0.39
+Number of rounds: 98000
+Average score per round: 0.39
+Number of rounds: 98100
+Average score per round: 0.37
+Number of rounds: 98200
+Average score per round: 0.41
+Number of rounds: 98300
+Average score per round: 0.37
+Number of rounds: 98400
+Average score per round: 0.25
+Number of rounds: 98500
+Average score per round: 0.33
+Number of rounds: 98600
+Average score per round: 0.33
+Number of rounds: 98700
+Average score per round: 0.39
+Number of rounds: 98800
+Average score per round: 0.29
+Number of rounds: 98900
+Average score per round: 0.28
+Number of rounds: 99000
+Average score per round: 0.32
+Number of rounds: 99100
+Average score per round: 0.37
+Number of rounds: 99200
+Average score per round: 0.24
+Number of rounds: 99300
+Average score per round: 0.22
+Number of rounds: 99400
+Average score per round: 0.39
+Number of rounds: 99500
+Average score per round: 0.43
+Number of rounds: 99600
+Average score per round: 0.29
+Number of rounds: 99700
+Average score per round: 0.33
+Number of rounds: 99800
+Average score per round: 0.34
+Number of rounds: 99900
+Average score per round: 0.29
+Number of rounds: 100000
+Average score per round: 0.36
+Number of rounds: 100100
+Average score per round: 0.31
+Number of rounds: 100200
+Average score per round: 0.33
+Number of rounds: 100300
+Average score per round: 0.35
+Number of rounds: 100400
+Average score per round: 0.32
+Number of rounds: 100500
+Average score per round: 0.28
+Number of rounds: 100600
+Average score per round: 0.37
+Number of rounds: 100700
+Average score per round: 0.35
+Number of rounds: 100800
+Average score per round: 0.29
+Number of rounds: 100900
+Average score per round: 0.32
+Number of rounds: 101000
+Average score per round: 0.46
+Number of rounds: 101100
+Average score per round: 0.35
+Number of rounds: 101200
+Average score per round: 0.33
+Number of rounds: 101300
+Average score per round: 0.33
+Number of rounds: 101400
+Average score per round: 0.31
+Number of rounds: 101500
+Average score per round: 0.39
+Number of rounds: 101600
+Average score per round: 0.24
+Number of rounds: 101700
+Average score per round: 0.33
+Number of rounds: 101800
+Average score per round: 0.28
+Number of rounds: 101900
+Average score per round: 0.3
+Number of rounds: 102000
+Average score per round: 0.36
+Number of rounds: 102100
+Average score per round: 0.33
+Number of rounds: 102200
+Average score per round: 0.24
+Number of rounds: 102300
+Average score per round: 0.25
+Number of rounds: 102400
+Average score per round: 0.39
+Number of rounds: 102500
+Average score per round: 0.36
+Number of rounds: 102600
+Average score per round: 0.23
+Number of rounds: 102700
+Average score per round: 0.38
+Number of rounds: 102800
+Average score per round: 0.3
+Number of rounds: 102900
+Average score per round: 0.47
+Number of rounds: 103000
+Average score per round: 0.38
+Number of rounds: 103100
+Average score per round: 0.33
+Number of rounds: 103200
+Average score per round: 0.46
+Number of rounds: 103300
+Average score per round: 0.32
+Number of rounds: 103400
+Average score per round: 0.39
+Number of rounds: 103500
+Average score per round: 0.3
+Number of rounds: 103600
+Average score per round: 0.26
+Number of rounds: 103700
+Average score per round: 0.36
+Number of rounds: 103800
+Average score per round: 0.4
+Number of rounds: 103900
+Average score per round: 0.35
+Number of rounds: 104000
+Average score per round: 0.38
+Number of rounds: 104100
+Average score per round: 0.36
+Number of rounds: 104200
+Average score per round: 0.41
+Number of rounds: 104300
+Average score per round: 0.24
+Number of rounds: 104400
+Average score per round: 0.27
+Number of rounds: 104500
+Average score per round: 0.37
+Number of rounds: 104600
+Average score per round: 0.3
+Number of rounds: 104700
+Average score per round: 0.41
+Number of rounds: 104800
+Average score per round: 0.37
+Number of rounds: 104900
+Average score per round: 0.37
+Number of rounds: 105000
+Average score per round: 0.28
+Number of rounds: 105100
+Average score per round: 0.32
+Number of rounds: 105200
+Average score per round: 0.38
+Number of rounds: 105300
+Average score per round: 0.39
+Number of rounds: 105400
+Average score per round: 0.3
+Number of rounds: 105500
+Average score per round: 0.32
+Number of rounds: 105600
+Average score per round: 0.34
+Number of rounds: 105700
+Average score per round: 0.28
+Number of rounds: 105800
+Average score per round: 0.32
+Number of rounds: 105900
+Average score per round: 0.28
+Number of rounds: 106000
+Average score per round: 0.4
+Number of rounds: 106100
+Average score per round: 0.36
+Number of rounds: 106200
+Average score per round: 0.27
+Number of rounds: 106300
+Average score per round: 0.43
+Number of rounds: 106400
+Average score per round: 0.33
+Number of rounds: 106500
+Average 

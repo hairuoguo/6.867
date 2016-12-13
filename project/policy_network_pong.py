@@ -75,11 +75,11 @@ def graph_results():
     plt.savefig('plot.png')
 
 def weight_variable(shape, var_name):
-    variable = tf.get_variable(var_name, shape, initializer=tf.contrib.layers.xavier_initializer())
+    variable = tf.get_variable(var_name, shape, initializer=tf.contrib.layers.xavier_initializer(), regularizer=tf.contrib.layers.l2_regularizer(0.8))
     return variable
 
 def bias_variable(shape, var_name):
-    variable = tf.get_variable(var_name, shape, initializer=tf.constant_initializer(0.0))
+    variable = tf.get_variable(var_name, shape, initializer=tf.constant_initializer(0.0), regularizer=tf.contrib.layers.l2_regularizer(0.8))
     return variable
 
 def make_network(network_input, num_actions):
@@ -128,7 +128,7 @@ def train(sess, env, iters, batch_size, df=0.01, visualize=False):
             if reward != 0:
                 weight = reward
                 weights = np.array([weight*max(0, 1-(len(action_gradients) - n)*df) for n in xrange(len(action_gradients))])
-                ep_gradient_sum = np.sum(weights.reshape((-1, 1))*np.array(action_gradients), axis=0)
+                ep_gradient_sum = np.mean(weights.reshape((-1, 1))*np.array(action_gradients), axis=0)
                 batch_gradients.append(ep_gradient_sum)
                 action_gradients = [] #list of gradients for each action taken in round
             if done:

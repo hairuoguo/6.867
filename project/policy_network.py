@@ -2,6 +2,7 @@ import tensorflow as tf
 import math
 import scipy as sp
 import numpy as np
+import cPickle as pickle
 import gym
 
 
@@ -14,7 +15,7 @@ def bias_variable(shape, var_name):
     return variable
 
 def make_network(network_input, num_actions):
-    W1 = weight_variable([1, 200], "W1") 
+    W1 = weight_variable([network_input.get_shape().as_list()[1], 200], "W1") 
     b1 = bias_variable([200], "b1")
     l1 = tf.nn.relu(tf.matmul(network_input, W1) + b1)
 
@@ -30,18 +31,19 @@ def loss(readout, index):
     return tf.nn.sparse_softmax_cross_entropy_with_logits(readout, index)
 
 
-def train(sess, env, iters, batch_size, df=0.01):
-    network_input = tf.placeholder(tf.float32, shape=[1, 1]) 
+def train(sess, env, iters, batch_size, df=0.1):
+    network_input = tf.placeholder(tf.float32, shape=[1, 16]) 
     global_step = tf.placeholder(tf.int32)
     one_hot = tf.placeholder(tf.int32, shape=[1])
     network = make_network(network_input, env.action_space.n)
     one_loss = loss(network, one_hot)
-    learning_rate_op = tf.maximum(0.00001, tf.train.exponential_decay(0.001, global_step, 50000, 0.95, staircase=True))
+    learning_rate_op = tf.maximum(0.00001, tf.train.exponential_decay(0.0001, global_step, 50000, 0.95, staircase=True))
     opt = tf.train.RMSPropOptimizer(learning_rate=learning_rate_op, momentum=0.95, epsilon=0.01)
     gradstep = opt.compute_gradients(one_loss)
     grads = [grad for grad, _ in gradstep]
     grads_placeholder = [(tf.placeholder(tf.float32), var) for (_, var) in gradstep]
     opt.apply_gradients(grads_placeholder)
+    average_scores = []
     
     with sess.as_default():
         init = tf.initialize_all_variables()
@@ -62,7 +64,9 @@ def train(sess, env, iters, batch_size, df=0.01):
                     else:
                         weight = 1.
                     weights = np.array([weight*max(0, 1-(len(action_gradients) - n)*df) for n in xrange(len(action_gradients))])
-                    ep_gradient_sum = np.sum(weights.reshape((-1, 1))*np.array(action_gradients), axis=0)
+                    weights -= np.mean(weights)
+                    weights /= np.std(weights)
+                    ep_gradient_sum = np.mean(weights.reshape((-1, 1))*np.array(action_gradients), axis=0)
                     batch_gradients.append(ep_gradient_sum)
                     batch_sum += reward_sum
                 if num_rounds % batch_size == 0:
@@ -72,7 +76,8 @@ def train(sess, env, iters, batch_size, df=0.01):
                         sess.run(opt.apply_gradients(grads_vars), feed_dict={global_step:step})
                         print("Number of rounds: " + str(num_rounds))
                         print("Average score per round: " + str(batch_sum/batch_size))
-                        '''run test episode'''
+                        average_scores.append(batch_sum/batch_size)
+                        '''run test episode
                         test_done = False
                         test_obs = env.reset()
                         prev_test_obs = np.zeros(obs.shape)
@@ -84,25 +89,28 @@ def train(sess, env, iters, batch_size, df=0.01):
                             test_steps += 1
                             test_frame = preprocess_frame(prev_test_obs, test_obs)
                             test_readout = sess.run(network, feed_dict={network_input: test_frame})
-                            print(test_readout.flatten())
+                            #print(test_readout.flatten())
                             test_action = np.argmax(test_readout.flatten())
                             test_actions.append(test_action)
                             prev_test_obs = test_obs
                             test_obs, reward, test_done, _ = env.step(test_action)
                             test_states.append(test_obs)
                             test_reward += reward
-                            if test_steps >= 10:
-                                test_done = True
+                            #if test_steps >= 20:
+                             #   test_done = True
                         print(test_states)
                         print(test_actions)
                         print("Test reward: " + str(test_reward))
-                    ''''''
+                    '''
                     batch_gradients = [] #list of summed gradients from each episode in batch
                     batch_sum = 0.
                     env.reset()
                 reward_sum = 0
                 action_gradients = [] #list of gradients for each action taken in batch
                 num_rounds += 1
+            #if num_rounds % 1000 == 0:
+             #   with open('frozenlake8x8_scores.p', 'w') as f:
+              #      pickle.dump(average_scores, f)
             frame = preprocess_frame(prev_obs, obs)
             readout = sess.run(network, feed_dict={network_input: frame})
             action = np.random.choice(range(env.action_space.n), p=readout.flatten())
@@ -114,8 +122,8 @@ def train(sess, env, iters, batch_size, df=0.01):
             prev_obs = obs
             obs, reward, done, _ = env.step(action)
             reward_sum += reward
-            if step - ep_start_step >= 100: #limit the number of steps per episode (or else it might just do the same thing over and over)
-                done = True
+            #if step - ep_start_step >= 20: #limit the number of steps per episode (or else it might just do the same thing over and over)
+               # done = True
 
 
 def preprocess_frame(prev_frame, frame):
@@ -124,10 +132,12 @@ def preprocess_frame(prev_frame, frame):
     difference = 0.299*difference[:, :, 0] + 0.587*difference[:, :, 1] + 0.114*difference[:, :, 2]
     return difference.ravel()
     '''
-    return np.array([frame]).reshape((1, 1))
+    result = np.zeros(16)
+    result[frame] = 1.
+    return result.reshape([1, 16])
 
 def main():
-    env = gym.make('Gridworld8x8-v0')
+    env = gym.make('FrozenLake-v0')
     gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.05)
     sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
     #network_input = tf.placeholder(tf.float32, shape=[80*80, 1]) 
